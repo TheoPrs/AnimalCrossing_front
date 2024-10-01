@@ -50,20 +50,31 @@ android {
 }
 
 dependencies {
+    // Jetpack Compose dependencies
+    implementation(libs.androidx.material) // Material 2 (optionnel si tu utilises Material 3)
+    implementation(platform(libs.androidx.compose.bom))
+    implementation("androidx.compose.material3:material3")
+    implementation(libs.ui)
 
+
+    // Navigation for Jetpack Compose
+    implementation("androidx.navigation:navigation-compose:2.6.0")
+
+    // AndroidX Core and Lifecycle
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+
+    // Activity for Compose
     implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.ui.graphics)
-    implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
+
+    // Test dependencies
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
+
+    // Debug tools
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 }
