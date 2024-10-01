@@ -14,11 +14,6 @@ import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Search
 import com.example.animalcrossing.R
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.MaterialTheme
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.MaterialTheme
-
 
 @Composable
 fun BottomNavigationBar() {
@@ -33,16 +28,10 @@ fun BottomNavigationBar() {
             selected = selectedItem == 0,
             onClick = { selectedItem = 0 }
         )
-        // Icône centrale pour la patte de chien
         BottomNavigationItem(
-            icon = {
-                Box(modifier = Modifier.height(56.dp).padding(bottom = 8.dp)) {  // Ajustement de l'icône centrale
-                    Icon(painterResource(id = R.drawable.paw), contentDescription = "Patte de chien")
-                }
-            },
+            icon = { Icon(painterResource(id = R.drawable.paw), contentDescription = "Patte de chien") },  // Assurez-vous que l'icône est bien importée
             selected = selectedItem == 1,
-            onClick = { selectedItem = 1 },
-            alwaysShowLabel = false  // Ne montre pas le label pour l'icône centrale
+            onClick = { selectedItem = 1 }
         )
         BottomNavigationItem(
             icon = { Icon(Icons.Filled.Person, contentDescription = "Profil") },
