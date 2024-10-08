@@ -55,6 +55,8 @@ dependencies {
     implementation(platform(libs.androidx.compose.bom))
     implementation("androidx.compose.material3:material3")
     implementation(libs.ui)
+    implementation(libs.coil.compose)
+
 
 
     // Navigation for Jetpack Compose
