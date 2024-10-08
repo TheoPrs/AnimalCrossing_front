@@ -46,7 +46,7 @@ fun MainScreen() {
         }
     }
 }
-
+//to do : Faire la transition
 @Composable
 fun NavigationGraph(navController: NavHostController) {
     NavHost(navController = navController, startDestination = "home") {
