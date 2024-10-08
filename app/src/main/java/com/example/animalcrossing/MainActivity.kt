@@ -9,11 +9,14 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.animalcrossing.components.BottomNavigationBar
+import com.example.animalcrossing.pages.WikiAnimalsDetails
+import com.example.animalcrossing.pages.WikiAnimalsPage
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,8 +49,11 @@ fun MainScreen() {
 fun NavigationGraph(navController: NavHostController) {
     NavHost(navController = navController, startDestination = "home") {
         composable("home") { HomeScreen() }
-        composable("search") { SearchScreen() }
+        composable("search") { SearchScreen(navController) }
         composable("profile") { ProfileScreen() }
+        composable("details/{index}") {
+            WikiAnimalsDetails()
+        }
     }
 }
 
@@ -57,8 +63,8 @@ fun HomeScreen() {
 }
 
 @Composable
-fun SearchScreen() {
-    // Contenu de ton écran de recherche
+fun SearchScreen(navController: NavController) {
+    WikiAnimalsPage(navController)
 }
 
 @Composable
