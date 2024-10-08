@@ -32,18 +32,6 @@ fun AccueilPage() {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Top
     ) {
-        // Titre de la page
-        Text(
-            text = "Accueil",
-            style = TextStyle(
-                color = Color(0xFFEAC9B8),
-                fontSize = 40.sp,
-                fontFamily = FontFamily.Cursive,
-                fontWeight = FontWeight.Bold
-            ),
-            modifier = Modifier.padding(top = 16.dp)
-        )
-
 
         SearchBar(
             hint = "Search for an animal"
@@ -80,7 +68,6 @@ fun SearchBar(hint: String) {
             verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.padding(horizontal = 16.dp)
         ) {
-            // Icone de recherche
             Icon(
                 imageVector = Icons.Default.Search,
                 contentDescription = "Search",

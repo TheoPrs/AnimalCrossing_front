@@ -14,6 +14,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.animalcrossing.components.BottomNavigationBar
+import com.example.animalcrossing.components.HeadBar
 import com.example.animalcrossing.pages.AccueilPage
 
 class MainActivity : ComponentActivity() {
@@ -31,15 +32,16 @@ fun MainScreen() {
 
     MaterialTheme {
         Scaffold(
+            topBar = { HeadBar(navController = navController) },
             bottomBar = { BottomNavigationBar(navController) }
-        ) { contentPadding ->
+        ) { innerPadding ->
             Surface(
-                modifier = Modifier
-                    .padding(contentPadding)
+                modifier = Modifier.padding(innerPadding)
             ) {
                 NavigationGraph(navController = navController)
             }
         }
+
     }
 }
 

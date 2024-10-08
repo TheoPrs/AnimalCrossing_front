@@ -1,6 +1,7 @@
 package com.example.animalcrossing.components
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
@@ -39,50 +40,60 @@ fun BottomNavigationBar(navController: NavController) {
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .height(80.dp),
+            .height(56.dp),
         contentAlignment = Alignment.BottomCenter
     ) {
-        BottomNavigation(
-            backgroundColor = Color(0xFF333333),
-            contentColor = Color(0xFFCCB7A8),
-            modifier = Modifier.fillMaxWidth()
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(56.dp)
+                .border(width = 1.dp, color = Color.Gray)
         ) {
-            BottomNavigationItem(
-                icon = { Icon(Icons.Filled.Search, contentDescription = "Search", tint = Color(0xFFD4BFA7)) },
-                selected = currentDestination == "search",
-                onClick = { navController.navigate("search") },
-                selectedContentColor = Color(0xFFD4BFA7),
-                unselectedContentColor = Color(0xFFCCB7A8)
-            )
-            Spacer(modifier = Modifier.weight(1f)) // Spacer to center the paw icon
-            BottomNavigationItem(
-                icon = { Icon(Icons.Filled.Person, contentDescription = "Profile", tint = Color(0xFFD4BFA7)) },
-                selected = currentDestination == "profile",
-                onClick = { navController.navigate("profile") },
-                selectedContentColor = Color(0xFFD4BFA7),
-                unselectedContentColor = Color(0xFFCCB7A8)
-            )
+            BottomNavigation(
+                backgroundColor = Color(0xFF333333),
+                contentColor = Color(0xFFCCB7A8),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                BottomNavigationItem(
+                    icon = { Icon(Icons.Filled.Search, contentDescription = "Search", tint = Color(0xFFD4BFA7)) },
+                    selected = currentDestination == "search",
+                    onClick = { navController.navigate("search") },
+                    selectedContentColor = Color(0xFFD4BFA7),
+                    unselectedContentColor = Color(0xFFCCB7A8)
+                )
+                Spacer(modifier = Modifier.weight(1f)) // Spacer pour centrer l'icône de patte
+                BottomNavigationItem(
+                    icon = { Icon(Icons.Filled.Person, contentDescription = "Profile", tint = Color(0xFFD4BFA7)) },
+                    selected = currentDestination == "profile",
+                    onClick = { navController.navigate("profile") },
+                    selectedContentColor = Color(0xFFD4BFA7),
+                    unselectedContentColor = Color(0xFFCCB7A8)
+                )
+            }
         }
 
 
         Box(
             modifier = Modifier
-                .size(80.dp)
-                .offset(y = (-10).dp)
+                .size(110.dp)
+                .offset(y = (-20).dp)
                 .clip(CircleShape)
                 .background(Color(0xFF333333))
-            .clickable { navController.navigate("home") },
+                .clickable { navController.navigate("home") }
+                .border(width = 1.dp, color = Color.Gray, shape = CircleShape),
+
             contentAlignment = Alignment.Center
         ) {
             Icon(
                 painter = painterResource(id = R.drawable.paw),
                 contentDescription = "Dog Paw",
                 tint = Color(0xFFAEA3B7),
-                modifier = Modifier.size(55.dp)
+                modifier = Modifier.size(65.dp)
             )
         }
     }
 }
+
 
 @Preview(showBackground = true)
 @Composable
