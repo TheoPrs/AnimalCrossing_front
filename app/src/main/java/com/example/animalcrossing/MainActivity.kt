@@ -14,6 +14,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.animalcrossing.components.BottomNavigationBar
+import com.example.animalcrossing.pages.AccueilPage
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,17 +27,17 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MainScreen() {
-    val navController = rememberNavController()  // Crée un contrôleur de navigation
+    val navController = rememberNavController()
 
     MaterialTheme {
         Scaffold(
-            bottomBar = { BottomNavigationBar(navController) }  // Passe le navController au BottomNavigationBar
+            bottomBar = { BottomNavigationBar(navController) }
         ) { contentPadding ->
             Surface(
                 modifier = Modifier
-                    .padding(contentPadding)  // Assure que le contenu ne chevauche pas la BottomBar
+                    .padding(contentPadding)
             ) {
-                NavigationGraph(navController = navController)  // Appelle le NavHost pour gérer les routes
+                NavigationGraph(navController = navController)
             }
         }
     }
@@ -44,24 +45,20 @@ fun MainScreen() {
 
 @Composable
 fun NavigationGraph(navController: NavHostController) {
+
     NavHost(navController = navController, startDestination = "home") {
-        composable("home") { HomeScreen() }
+        composable("home") { AccueilPage() }
         composable("search") { SearchScreen() }
         composable("profile") { ProfileScreen() }
     }
 }
 
 @Composable
-fun HomeScreen() {
-    // Contenu de ton écran d'accueil
-}
-
-@Composable
 fun SearchScreen() {
-    // Contenu de ton écran de recherche
+
 }
 
 @Composable
 fun ProfileScreen() {
-    // Contenu de ton écran de profil
+
 }
