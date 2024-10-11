@@ -38,7 +38,6 @@ fun WikiAnimalsDetails(){
             .background(PinkPrincipal).padding(10.dp),text = "Ce sont des animaux qui se caractérisent par la mobilité indépendante de leurs yeux, leur langue protractile qui leur permet d'attraper leurs proies à distance, les doigts groupés en deux blocs opposabl")
         Box(modifier = Modifier.size(40.dp).background(PinkPrincipal))
     }
-
 }
 
 @Composable
