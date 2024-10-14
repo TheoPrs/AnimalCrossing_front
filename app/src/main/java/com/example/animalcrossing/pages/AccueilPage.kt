@@ -25,13 +25,21 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-
+import com.example.animalcrossing.R
+import com.example.animalcrossing.components.Animal
+import com.example.animalcrossing.components.AnimalList
 
 
 @Composable
 fun AccueilPage(viewModel: AnimalFactViewModel = viewModel()) {
 
     val animalFact by viewModel.animalFact.collectAsState()
+
+    val animals = listOf(
+        Animal(name = "FouFou", hasEatenToday = true, imageRes = R.drawable.image_foufou),
+        Animal(name = "Rex", hasEatenToday = false, imageRes = R.drawable.image_rex),
+        Animal(name = "Bella", hasEatenToday = true, imageRes = R.drawable.image_bella)
+    )
 
     LaunchedEffect(Unit) {
         viewModel.fetchAnimalFact()
@@ -46,6 +54,7 @@ fun AccueilPage(viewModel: AnimalFactViewModel = viewModel()) {
         verticalArrangement = Arrangement.Top
     ) {
 
+        // Barre de recherche
         SearchBar(
             hint = "Search for an animal"
         )
@@ -61,13 +70,14 @@ fun AccueilPage(viewModel: AnimalFactViewModel = viewModel()) {
                     .padding(top = 40.dp)
             )
         } ?: run {
-
             Text(
                 text = "Loading...",
                 color = Color.White,
                 modifier = Modifier.padding(top = 40.dp)
             )
         }
+
+        AnimalList(animals = animals)
     }
 }
 
