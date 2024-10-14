@@ -1,8 +1,19 @@
 package com.example.animalcrossing.pages
 
-
+import AnimalFactViewModel
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
+
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.material3.*
@@ -10,19 +21,21 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.font.FontFamily
-import com.example.animalcrossing.R
+import androidx.compose.ui.unit.sp
+
+
 
 @Composable
-fun AccueilPage() {
+fun AccueilPage(viewModel: AnimalFactViewModel = viewModel()) {
+
+    val animalFact by viewModel.animalFact.collectAsState()
+
+    LaunchedEffect(Unit) {
+        viewModel.fetchAnimalFact()
+    }
 
     Column(
         modifier = Modifier
@@ -38,17 +51,23 @@ fun AccueilPage() {
         )
 
 
-        Text(
-            text = "Le narval, souvent surnommé \"licorne des mers\", possède une longue défense torsadée qui peut atteindre jusqu'à 3 mètres de long. Ce n'est pas une corne, mais une dent géante !",
-            style = TextStyle(
+        animalFact?.let { fact ->
+            Text(
+                text = fact,
                 color = Color.White,
-                fontSize = 18.sp,
-                fontFamily = FontFamily.Default,
-                fontWeight = FontWeight.SemiBold
-            ),
-            modifier = Modifier.padding(top = 40.dp),
-            lineHeight = 24.sp
-        )
+                fontWeight = FontWeight.Bold,
+                fontStyle = FontStyle.Italic,
+                modifier = Modifier
+                    .padding(top = 40.dp)
+            )
+        } ?: run {
+
+            Text(
+                text = "Loading...",
+                color = Color.White,
+                modifier = Modifier.padding(top = 40.dp)
+            )
+        }
     }
 }
 
@@ -75,7 +94,6 @@ fun SearchBar(hint: String) {
                 modifier = Modifier.size(20.dp)
             )
 
-
             BasicTextField(
                 value = text,
                 onValueChange = { text = it },
@@ -85,7 +103,6 @@ fun SearchBar(hint: String) {
                     .padding(horizontal = 8.dp)
             )
 
-
             Icon(
                 imageVector = Icons.Default.Add,
                 contentDescription = "Add",
@@ -93,7 +110,6 @@ fun SearchBar(hint: String) {
                 modifier = Modifier.size(24.dp)
             )
         }
-
 
         if (text.isEmpty()) {
             Text(
