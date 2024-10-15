@@ -19,12 +19,13 @@ import com.example.animalcrossing.components.BottomNavigationBar
 import com.example.animalcrossing.components.HeadBar
 import com.example.animalcrossing.pages.AccueilPage
 import com.example.animalcrossing.pages.ProfilePage
+import com.example.loginpage.LoginScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MainScreen()
+            LoginScreen()
         }
     }
 }

@@ -27,6 +27,7 @@ fun HeadBar(navController: NavHostController) {
 
     val pageTitle = when (currentRoute) {
         "home" -> "Accueil"
+        "log" -> "Connexion"
         "search" -> "Recherche"
         "profile" -> "Profil"
         else -> "Animal Crossing"
