@@ -21,6 +21,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.registerpage.RegisterScreen
 
 class LoginPage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,32 +31,55 @@ class LoginPage : ComponentActivity() {
         }
     }
 }
-
 @Composable
 fun LoginScreen(viewModel: LoginViewModel = viewModel()) {
     val mainColor = Color(0xFFEAC9B8)
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     val loginState by viewModel.loginState.collectAsState()
-
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color(0xFF333333)) // Background color for the screen
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp) // Padding to place the button nicely inside the screen
+                .align(Alignment.TopEnd), // Align the Row in the top-right corner
+            horizontalArrangement = Arrangement.End // Arrange content (button) at the end
+        ) {
+            Button(
+                onClick = {
+                    // Action for creating an account (redirect, etc.)
+                },
+                colors = ButtonDefaults.buttonColors(mainColor),
+                modifier = Modifier.padding(end = 16.dp) // Padding to move the button away from the edge
+            ) {
+                Text(text = "Créer un compte")
+            }
+        }
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF333333)),
+            .padding(horizontal = 32.dp)
+            .align(Alignment.Center), // Align the content to the center of the screen
         verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally,
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
             text = "Animal Crossing",
             style = MaterialTheme.typography.h3.copy(
-                color = Color(0xFFEAC9B8),
+                color = mainColor,
                 fontSize = 40.sp,
                 fontFamily = FontFamily.Cursive,
                 fontWeight = FontWeight.Bold,
             ),
             modifier = Modifier.padding(top = 16.dp)
         )
+
         Spacer(modifier = Modifier.height(60.dp))
+
         Text(text = "Connexion", style = MaterialTheme.typography.h4, color = mainColor)
 
         Spacer(modifier = Modifier.height(60.dp))
@@ -76,8 +100,6 @@ fun LoginScreen(viewModel: LoginViewModel = viewModel()) {
                 keyboardType = KeyboardType.Email
             ),
             modifier = Modifier.fillMaxWidth()
-                .padding(32.dp,0.dp,32.dp,0.dp)
-
         )
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -95,11 +117,10 @@ fun LoginScreen(viewModel: LoginViewModel = viewModel()) {
             ),
             textStyle = TextStyle(color = Color.White),
             visualTransformation = PasswordVisualTransformation(),
-
             keyboardOptions = KeyboardOptions.Default.copy(
                 keyboardType = KeyboardType.Password
             ),
-            modifier = Modifier.fillMaxWidth().padding(32.dp,0.dp,32.dp,0.dp)
+            modifier = Modifier.fillMaxWidth()
         )
 
         Spacer(modifier = Modifier.height(40.dp))
@@ -109,11 +130,10 @@ fun LoginScreen(viewModel: LoginViewModel = viewModel()) {
                 viewModel.login(email, password)
             },
             colors = ButtonDefaults.buttonColors(mainColor),
-            modifier = Modifier.fillMaxWidth().padding(32.dp,0.dp,32.dp,25.dp)
+            modifier = Modifier.fillMaxWidth()
         ) {
             Text(text = "Connexion")
         }
-
 
         Spacer(modifier = Modifier.height(16.dp))
 
@@ -124,7 +144,8 @@ fun LoginScreen(viewModel: LoginViewModel = viewModel()) {
             Text(
                 text = if (loginState.errorMessage.isNotBlank()) loginState.errorMessage else "",
                 color = MaterialTheme.colors.error
-            )
+                )
+            }
         }
     }
 }

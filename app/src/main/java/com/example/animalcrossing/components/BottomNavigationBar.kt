@@ -32,8 +32,6 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 
 @Composable
 fun BottomNavigationBar(navController: NavController) {
-    var selectedItem by remember { mutableIntStateOf(1) }
-    val items = listOf("search", "home", "profile")
     val currentBackStackEntry = navController.currentBackStackEntryAsState()
     val currentDestination = currentBackStackEntry.value?.destination?.route
 
