@@ -2,6 +2,7 @@ package com.example.animalcrossing
 
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.padding
@@ -20,6 +21,7 @@ import com.example.animalcrossing.components.HeadBar
 import com.example.animalcrossing.pages.AccueilPage
 import com.example.animalcrossing.pages.ProfilePage
 import com.example.loginpage.LoginScreen
+import com.example.registerpage.RegisterScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

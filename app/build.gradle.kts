@@ -90,7 +90,7 @@ dependencies {
     implementation(libs.androidx.material3)
 
     implementation(libs.ui)
-    implementation(libs.androidx.material)
+    implementation(libs.androidx.material)// Pour Android
 
     testImplementation(libs.junit)
 
