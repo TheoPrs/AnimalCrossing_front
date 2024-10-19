@@ -26,7 +26,7 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.example.animalcrossing.R
-import com.example.animalcrossing.components.Animal
+import com.example.animalcrossing.components.AnimalCard
 import com.example.animalcrossing.components.AnimalList
 
 
@@ -36,9 +36,9 @@ fun AccueilPage(viewModel: AnimalFactViewModel = viewModel()) {
     val animalFact by viewModel.animalFact.collectAsState()
 
     val animals = listOf(
-        Animal(name = "FouFou", hasEatenToday = true, imageRes = R.drawable.image_foufou),
-        Animal(name = "Rex", hasEatenToday = false, imageRes = R.drawable.image_rex),
-        Animal(name = "Bella", hasEatenToday = true, imageRes = R.drawable.image_bella)
+        AnimalCard(name = "FouFou", hasEatenToday = true, imageRes = R.drawable.image_foufou),
+        AnimalCard(name = "Rex", hasEatenToday = false, imageRes = R.drawable.image_rex),
+        AnimalCard(name = "Bella", hasEatenToday = true, imageRes = R.drawable.image_bella)
     )
 
     LaunchedEffect(Unit) {

@@ -16,14 +16,14 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-data class Animal(
+data class AnimalCard(
     val name: String,
     val hasEatenToday: Boolean,
     val imageRes: Int
 )
 
 @Composable
-fun AnimalCard(animal: Animal, onClick: () -> Unit) {
+fun AnimalCard(animal: AnimalCard, onClick: () -> Unit) {
     Card(
         modifier = Modifier
             .padding(8.dp)
@@ -62,7 +62,7 @@ fun AnimalCard(animal: Animal, onClick: () -> Unit) {
 }
 
 @Composable
-fun AnimalList(animals: List<Animal>) {
+fun AnimalList(animals: List<AnimalCard>) {
     Column(
         modifier = Modifier
             .fillMaxSize()
