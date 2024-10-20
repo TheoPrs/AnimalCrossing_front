@@ -23,7 +23,7 @@ data class AnimalCard(
 )
 
 @Composable
-fun AnimalCard(animal: Animal, onClick: () -> Unit) {
+fun AnimalCard(animal: AnimalCard, onClick: () -> Unit) {
     Card(
         modifier = Modifier
             .padding(8.dp)
@@ -62,7 +62,7 @@ fun AnimalCard(animal: Animal, onClick: () -> Unit) {
 }
 
 @Composable
-fun AnimalList(animals: List<Animal>) {
+fun AnimalList(animals: List<AnimalCard>) {
     Column(
         modifier = Modifier
             .fillMaxSize()

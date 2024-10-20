@@ -40,6 +40,7 @@ fun AccueilPage(viewModel: AnimalFactViewModel = viewModel()) {
         Animal(name = "FouFou", hasEaten = true,poids = 9, age = "12 ans", sexe = "female", espece = "blabla", imageRes = drawable.image_foufou),
         Animal(name = "Rex", hasEaten = false,poids = 4, age = "2 ans", sexe = "male", espece = "blabla", imageRes = drawable.image_rex),
         Animal(name = "Bella", hasEaten = true, poids = 4, age = "2 ans", sexe = "male", espece = "blabla",imageRes = drawable.image_bella)
+
     )
 
     LaunchedEffect(Unit) {
