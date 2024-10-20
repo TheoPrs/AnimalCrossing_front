@@ -54,7 +54,7 @@ dependencies {
     // Jetpack Compose dependencies
     implementation(libs.androidx.material) // Material 2 (optionnel si tu utilises Material 3)
     implementation(platform(libs.androidx.compose.bom))
-    implementation("androidx.compose.material3:material3")
+    implementation(libs.androidx.compose.material3.material32)
     implementation(libs.ui)
     implementation(libs.coil.compose)
 
@@ -65,9 +65,8 @@ dependencies {
     implementation("io.ktor:ktor-client-android:3.0.0")
 
 
-
     // Navigation for Jetpack Compose
-    implementation("androidx.navigation:navigation-compose:2.6.0")
+    implementation(libs.androidx.navigation.compose)
 
     // AndroidX Core and Lifecycle
     implementation(libs.androidx.core.ktx)
@@ -87,19 +86,17 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.ui.graphics)
-    implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
+    // Retrofit and Coil
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.coil.compose.v200)
 
-    implementation(libs.ui)
-    implementation(libs.androidx.material)// Pour Android
-
-    testImplementation(libs.junit)
+    // Ktor for HTTP Client
+    implementation(libs.ktor.client.core)
+    implementation(libs.ktor.client.cio) // CIO engine pour les requêtes réseau
+    implementation(libs.ktor.client.content.negotiation) // Plugin pour la négociation de contenu
+    implementation(libs.ktor.serialization.kotlinx.json) // Serialization avec Kotlinx
+    implementation(libs.ktor.client.logging) // Logging HTTP (optionnel)
 
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

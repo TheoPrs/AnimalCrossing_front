@@ -1,6 +1,6 @@
 package com.example.animalcrossing.pages
 
-import AnimalFactViewModel
+import com.example.animalcrossing.viewmodel.AnimalFactViewModel
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Text
@@ -26,7 +26,8 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.example.animalcrossing.R
-import com.example.animalcrossing.components.AnimalCard
+import com.example.animalcrossing.R.drawable
+import com.example.animalcrossing.components.Animal
 import com.example.animalcrossing.components.AnimalList
 
 
@@ -36,9 +37,10 @@ fun AccueilPage(viewModel: AnimalFactViewModel = viewModel()) {
     val animalFact by viewModel.animalFact.collectAsState()
 
     val animals = listOf(
-        AnimalCard(name = "FouFou", hasEatenToday = true, imageRes = R.drawable.image_foufou),
-        AnimalCard(name = "Rex", hasEatenToday = false, imageRes = R.drawable.image_rex),
-        AnimalCard(name = "Bella", hasEatenToday = true, imageRes = R.drawable.image_bella)
+        Animal(name = "FouFou", hasEaten = true,poids = 9, age = "12 ans", sexe = "female", espece = "blabla", imageRes = drawable.image_foufou),
+        Animal(name = "Rex", hasEaten = false,poids = 4, age = "2 ans", sexe = "male", espece = "blabla", imageRes = drawable.image_rex),
+        Animal(name = "Bella", hasEaten = true, poids = 4, age = "2 ans", sexe = "male", espece = "blabla",imageRes = drawable.image_bella)
+
     )
 
     LaunchedEffect(Unit) {

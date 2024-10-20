@@ -24,18 +24,10 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
-
-class RegisterPage : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            RegisterScreen()
-        }
-    }
-}
+import androidx.navigation.NavHostController
 
 @Composable
-fun RegisterScreen(viewModel: RegisterViewModel = viewModel()) {
+fun RegisterScreen(navController: NavHostController,viewModel: RegisterViewModel = viewModel()) {
     val mainColor = Color(0xFFEAC9B8)
     var name by remember { mutableStateOf("") }
     var surname by remember { mutableStateOf("") }
@@ -61,7 +53,7 @@ fun RegisterScreen(viewModel: RegisterViewModel = viewModel()) {
     ) {
         Button(
             onClick = {
-                // Action for creating an account (redirect, etc.)
+                navController.popBackStack()
             },
             colors = ButtonDefaults.buttonColors(mainColor),
             modifier = Modifier.padding(end = 16.dp).align(Alignment.End).height(30.dp) // Padding to move the button away from the edge
@@ -197,6 +189,7 @@ fun RegisterScreen(viewModel: RegisterViewModel = viewModel()) {
             onClick = {
                 if (password.toString() == password2.toString()) {
                     viewModel.register(surname, name, email, password, password2)
+                    navController.popBackStack()
                 }else {
                     Toast.makeText(context, "Les mots de passe ne sont pas identiques.",Toast.LENGTH_SHORT).show()
                 }

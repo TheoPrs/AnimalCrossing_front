@@ -50,12 +50,12 @@ fun AnimalCard(animal: AnimalCard, onClick: () -> Unit) {
                     fontSize = 18.sp,
                     modifier = Modifier.padding(bottom = 4.dp)
                 )
-                Text(
-                    text = if (animal.hasEatenToday) "A mangé aujourd'hui" else "N'a pas mangé",
-                    fontSize = 14.sp,
-                    color = if (animal.hasEatenToday) Color.Green else Color.Red,
-                    textAlign = TextAlign.Left
-                )
+                //Text(
+                    //text = if (this.hasEatenToday) "A mangé aujourd'hui" else "N'a pas mangé",
+                    //fontSize = 14.sp,
+                    //color = if (animal.hasEatenToday) Color.Green else Color.Red,
+                    //textAlign = TextAlign.Left
+                //)
             }
         }
     }

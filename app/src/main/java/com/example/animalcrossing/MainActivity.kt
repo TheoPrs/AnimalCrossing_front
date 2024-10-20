@@ -50,8 +50,18 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MainScreen()
-//            UserList()
+            val navController = rememberNavController() // Crée un NavController pour la navigation
+            NavHost(navController = navController, startDestination = "login") {
+                // Définir l'écran de connexion comme première page
+                composable("login") {
+                    LoginScreen(navController = navController) // Passer le navController à LoginScreen
+                }
+                // Naviguer vers l'écran de création de compte
+                composable("register") {
+                    RegisterScreen(navController = navController) // Passer le navController à RegisterScreen
+                }
+            }
+
         }
     }
 }
