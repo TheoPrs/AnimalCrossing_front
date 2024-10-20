@@ -21,129 +21,145 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import com.example.registerpage.RegisterScreen
 
 class LoginPage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            LoginScreen()
+            val navController = rememberNavController() // Crée le contrôleur de navigation
+            NavigationApp(navController)
         }
     }
 }
 @Composable
-fun LoginScreen(viewModel: LoginViewModel = viewModel()) {
+fun NavigationApp(navController: NavHostController) {
+    NavHost(navController = navController, startDestination = "login") {
+        composable("login") {
+            LoginScreen(navController) // Écran de connexion
+        }
+        composable("register") {
+            RegisterScreen(navController) // Écran de création de compte
+        }
+    }
+}
+@Composable
+fun LoginScreen(navController: NavHostController, viewModel: LoginViewModel = viewModel()) {
     val mainColor = Color(0xFFEAC9B8)
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     val loginState by viewModel.loginState.collectAsState()
+
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF333333)) // Background color for the screen
+            .background(Color(0xFF333333))
     ) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp) // Padding to place the button nicely inside the screen
-                .align(Alignment.TopEnd), // Align the Row in the top-right corner
-            horizontalArrangement = Arrangement.End // Arrange content (button) at the end
+                .padding(16.dp)
+                .align(Alignment.TopEnd),
+            horizontalArrangement = Arrangement.End
         ) {
             Button(
                 onClick = {
-                    // Action for creating an account (redirect, etc.)
+                    // Naviguer vers l'écran de création de compte
+                    navController.navigate("register")
                 },
                 colors = ButtonDefaults.buttonColors(mainColor),
-                modifier = Modifier.padding(end = 16.dp) // Padding to move the button away from the edge
+                modifier = Modifier.padding(end = 16.dp)
             ) {
                 Text(text = "Créer un compte")
             }
         }
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(horizontal = 32.dp)
-            .align(Alignment.Center), // Align the content to the center of the screen
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Text(
-            text = "Animal Crossing",
-            style = MaterialTheme.typography.h3.copy(
-                color = mainColor,
-                fontSize = 40.sp,
-                fontFamily = FontFamily.Cursive,
-                fontWeight = FontWeight.Bold,
-            ),
-            modifier = Modifier.padding(top = 16.dp)
-        )
 
-        Spacer(modifier = Modifier.height(60.dp))
-
-        Text(text = "Connexion", style = MaterialTheme.typography.h4, color = mainColor)
-
-        Spacer(modifier = Modifier.height(60.dp))
-
-        // Email input
-        OutlinedTextField(
-            value = email,
-            onValueChange = { email = it },
-            label = { Text("Email") },
-            colors = TextFieldDefaults.outlinedTextFieldColors(
-                unfocusedLabelColor = mainColor,
-                unfocusedBorderColor = mainColor,
-                focusedLabelColor = mainColor,
-                focusedBorderColor = mainColor
-            ),
-            textStyle = TextStyle(color = Color.White),
-            keyboardOptions = KeyboardOptions.Default.copy(
-                keyboardType = KeyboardType.Email
-            ),
-            modifier = Modifier.fillMaxWidth()
-        )
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        // Password input
-        OutlinedTextField(
-            value = password,
-            onValueChange = { password = it },
-            label = { Text("Mot de passe") },
-            colors = TextFieldDefaults.outlinedTextFieldColors(
-                unfocusedLabelColor = mainColor,
-                unfocusedBorderColor = mainColor,
-                focusedLabelColor = mainColor,
-                focusedBorderColor = mainColor
-            ),
-            textStyle = TextStyle(color = Color.White),
-            visualTransformation = PasswordVisualTransformation(),
-            keyboardOptions = KeyboardOptions.Default.copy(
-                keyboardType = KeyboardType.Password
-            ),
-            modifier = Modifier.fillMaxWidth()
-        )
-
-        Spacer(modifier = Modifier.height(40.dp))
-
-        Button(
-            onClick = {
-                viewModel.login(email, password)
-            },
-            colors = ButtonDefaults.buttonColors(mainColor),
-            modifier = Modifier.fillMaxWidth()
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 32.dp)
+                .align(Alignment.Center),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(text = "Connexion")
-        }
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        // Display login status
-        if (loginState.isLoading) {
-            CircularProgressIndicator()
-        } else {
             Text(
-                text = if (loginState.errorMessage.isNotBlank()) loginState.errorMessage else "",
-                color = MaterialTheme.colors.error
+                text = "Animal Crossing",
+                style = MaterialTheme.typography.h3.copy(
+                    color = mainColor,
+                    fontSize = 40.sp,
+                    fontFamily = FontFamily.Cursive,
+                    fontWeight = FontWeight.Bold,
+                ),
+                modifier = Modifier.padding(top = 16.dp)
+            )
+
+            Spacer(modifier = Modifier.height(60.dp))
+
+            Text(text = "Connexion", style = MaterialTheme.typography.h4, color = mainColor)
+
+            Spacer(modifier = Modifier.height(60.dp))
+
+            OutlinedTextField(
+                value = email,
+                onValueChange = { email = it },
+                label = { Text("Email") },
+                colors = TextFieldDefaults.outlinedTextFieldColors(
+                    unfocusedLabelColor = mainColor,
+                    unfocusedBorderColor = mainColor,
+                    focusedLabelColor = mainColor,
+                    focusedBorderColor = mainColor
+                ),
+                textStyle = TextStyle(color = Color.White),
+                keyboardOptions = KeyboardOptions.Default.copy(
+                    keyboardType = KeyboardType.Email
+                ),
+                modifier = Modifier.fillMaxWidth()
+            )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            OutlinedTextField(
+                value = password,
+                onValueChange = { password = it },
+                label = { Text("Mot de passe") },
+                colors = TextFieldDefaults.outlinedTextFieldColors(
+                    unfocusedLabelColor = mainColor,
+                    unfocusedBorderColor = mainColor,
+                    focusedLabelColor = mainColor,
+                    focusedBorderColor = mainColor
+                ),
+                textStyle = TextStyle(color = Color.White),
+                visualTransformation = PasswordVisualTransformation(),
+                keyboardOptions = KeyboardOptions.Default.copy(
+                    keyboardType = KeyboardType.Password
+                ),
+                modifier = Modifier.fillMaxWidth()
+            )
+
+            Spacer(modifier = Modifier.height(40.dp))
+
+            Button(
+                onClick = {
+                    viewModel.login(email, password)
+                },
+                colors = ButtonDefaults.buttonColors(mainColor),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(text = "Connexion")
+            }
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            if (loginState.isLoading) {
+                CircularProgressIndicator()
+            } else {
+                Text(
+                    text = if (loginState.errorMessage.isNotBlank()) loginState.errorMessage else "",
+                    color = MaterialTheme.colors.error
                 )
             }
         }
