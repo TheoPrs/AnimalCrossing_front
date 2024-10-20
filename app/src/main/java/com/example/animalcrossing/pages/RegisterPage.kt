@@ -189,6 +189,7 @@ fun RegisterScreen(navController: NavHostController,viewModel: RegisterViewModel
             onClick = {
                 if (password.toString() == password2.toString()) {
                     viewModel.register(surname, name, email, password, password2)
+                    navController.popBackStack()
                 }else {
                     Toast.makeText(context, "Les mots de passe ne sont pas identiques.",Toast.LENGTH_SHORT).show()
                 }
