@@ -6,11 +6,12 @@ import kotlinx.serialization.Serializable
 data class AnimalWiki(
     val id_animal: Int,
     val name: String,
-    val specy: String? = null,
-    val alimentation: String? = null,
-    val height: String? = null,
-    val weight: String? = null,
-    val temperament: String? = null,
-    val environment: String? = null,
-    val paragraphe_animal: String? = null
+    val specy: String,
+    val alimentation: String,
+    val height: String,
+    val weight: String,
+    val temperament: String,
+    val environment: String,
+    val paragraphe_animal: String,
+    val image_path: String
 )

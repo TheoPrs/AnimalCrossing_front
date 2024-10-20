@@ -20,8 +20,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import coil.compose.AsyncImage
 import com.example.animalcrossing.R
-import com.example.animalcrossing.ui.theme.PinkPrincipal
+import com.example.animalcrossing.ui.theme.Pink40
 
 
 
@@ -32,10 +33,10 @@ fun AnimalsBox(modifier: Modifier = Modifier, onNavigationClick: () -> Unit){
         .height(50.dp)
         .shadow(8.dp, RoundedCornerShape(16.dp))
         .clip(RoundedCornerShape(16.dp))
-        .background(PinkPrincipal)
+        .background(Pink40)
         .clickable(onClick = onNavigationClick)
     ){
-        AnimalImages()
+//        AnimalImages()
         Text(text = "Caméleon casqué", modifier = Modifier
             .align(Alignment.CenterStart)
             .padding(start = 120.dp), fontFamily = FontFamily.Serif
@@ -44,10 +45,7 @@ fun AnimalsBox(modifier: Modifier = Modifier, onNavigationClick: () -> Unit){
 }
 
 
-@Composable
-fun AnimalImages(){
-    Image(painter = painterResource(id = R.drawable.cameleon_casque), contentDescription ="Image d'un caméléon", modifier = Modifier)
-}
+
 
 @Preview(showBackground = true)
 @Composable
