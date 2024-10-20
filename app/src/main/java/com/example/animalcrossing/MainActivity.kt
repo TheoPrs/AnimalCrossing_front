@@ -17,6 +17,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.lifecycle.viewModelScope
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -27,6 +28,9 @@ import com.example.animalcrossing.data.entities.AnimalWiki
 import com.example.animalcrossing.data.entities.User
 import com.example.animalcrossing.pages.AccueilPage
 import com.example.animalcrossing.pages.ProfilePage
+import com.example.animalcrossing.pages.WikiAnimalsDetails
+import com.example.animalcrossing.pages.WikiAnimalsPage
+import com.example.animalcrossing.viewmodels.AnimalWikiDetailsViewModel
 import com.example.loginpage.LoginScreen
 import com.example.registerpage.RegisterScreen
 import io.github.jan.supabase.auth.Auth
@@ -89,8 +93,16 @@ fun MainScreen() {
 fun NavigationGraph(navController: NavHostController) {
     NavHost(navController = navController, startDestination = "home") {
         composable("home") { AccueilPage() }
-        composable("search") { UserList() }
+        composable("search") { WikiAnimalsPage(navController) }
         composable("profile") { ProfilePage(navController) }
+        composable("details/{animalId}") { backStackEntry ->
+            val animalIdString = backStackEntry.arguments?.getString("animalId") // Récupère comme String
+            val animalId = animalIdString?.toIntOrNull() // Convertit en Int, retourne null si la conversion échoue
+            Log.i("animalId","${animalId}")
+            if (animalId != null) {
+                WikiAnimalsDetails(animalId)
+            }
+        }
     }
 }
 
@@ -100,21 +112,5 @@ fun SearchScreen() {
 }
 
 
-@Composable
-fun UserList(){
-    val animals = remember{ mutableStateListOf<AnimalWiki>() }
-    LaunchedEffect(Unit){
-        withContext(Dispatchers.IO){
-            val results = supabase.from("animal_wiki").select().decodeList<AnimalWiki>()
-            Log.d("AnimalList", "Fetched users: $results")
-            animals.addAll(results)
-        }
-    }
-    LazyColumn {
-        items(animals.size){ index ->
-            val animal = animals[index]
-            ListItem(headlineContent = { Text(text = animal.name) })
-        }
-    }
-}
+
 
