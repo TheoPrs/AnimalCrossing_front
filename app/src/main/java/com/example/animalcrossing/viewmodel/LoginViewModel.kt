@@ -1,8 +1,9 @@
 package com.example.loginpage
 
+import android.widget.Toast
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.app.data.AuthRepository
+//import com.example.app.data.AuthRepository
 import com.example.app.data.model.AuthResponse // Assure-toi d'importer le bon modèle
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -18,21 +19,23 @@ class LoginViewModel : ViewModel() {
 
     private val _loginState = MutableStateFlow(LoginState())
     val loginState: StateFlow<LoginState> = _loginState
-    private val authRepository = AuthRepository() // Instance de AuthRepository
+    //private val authRepository = AuthRepository() // Instance de AuthRepository
 
     fun login(email: String, password: String) {
         viewModelScope.launch {
             _loginState.value = LoginState(isLoading = true)
 
             try {
-                // Appeler la méthode d'authentification
-                val authResponse: AuthResponse = authRepository.signInWithEmail(email, password)
+                if (email == "test@gmail.com" && password == "1234azer") {
+                    _loginState.value = LoginState(isLoading = false)
 
+                }
                 // Si la connexion est réussie, mettre à jour l'état
-                _loginState.value = LoginState(isLoading = false, authResponse = authResponse)
+
             } catch (e: Exception) {
                 // Gérer les erreurs ici
-                _loginState.value = LoginState(isLoading = false, errorMessage = e.message ?: "Unknown error")
+                _loginState.value =
+                    LoginState(isLoading = false, errorMessage = e.message ?: "Unknown error")
             }
         }
     }

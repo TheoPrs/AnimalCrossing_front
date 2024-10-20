@@ -79,7 +79,6 @@ fun AccueilPage(viewModel: AnimalFactViewModel = viewModel()) {
             )
         }
 
-        AnimalList(animals = animals)
     }
 }
 
