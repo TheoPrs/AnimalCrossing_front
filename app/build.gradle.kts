@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    kotlin("plugin.serialization") version "1.9.0"
 }
 
 android {
@@ -57,6 +58,12 @@ dependencies {
     implementation(libs.ui)
     implementation(libs.coil.compose)
 
+    implementation(platform("io.github.jan-tennert.supabase:bom:3.0.1"))
+    implementation("io.github.jan-tennert.supabase:postgrest-kt")
+    implementation("io.github.jan-tennert.supabase:auth-kt")
+    implementation("io.github.jan-tennert.supabase:realtime-kt")
+    implementation("io.ktor:ktor-client-android:3.0.0")
+
 
 
     // Navigation for Jetpack Compose
@@ -104,7 +111,16 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.4.0")
     implementation("io.coil-kt:coil-compose:2.0.0")
 
+    implementation ("org.jetbrains.kotlinx:kotlinx-serialization-core:1.5.1")
+    implementation ("org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.5.1")
 
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+}
+
+configurations.all {
+    resolutionStrategy {
+        force ("org.jetbrains.kotlinx:kotlinx-serialization-core:1.5.1")
+        force ("org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.5.1")
+    }
 }
