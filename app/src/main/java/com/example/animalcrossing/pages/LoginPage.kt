@@ -25,6 +25,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.animalcrossing.pages.AccueilPage
 import com.example.registerpage.RegisterScreen
 
 class LoginPage : ComponentActivity() {
@@ -44,6 +45,9 @@ fun NavigationApp(navController: NavHostController) {
         }
         composable("register") {
             RegisterScreen(navController) // Écran de création de compte
+        }
+        composable("home") {
+            AccueilPage()
         }
     }
 }
@@ -144,7 +148,9 @@ fun LoginScreen(navController: NavHostController, viewModel: LoginViewModel = vi
 
             Button(
                 onClick = {
-                    viewModel.login(email, password)
+                    if(email=="azer@gmail.com" && password=="azer1234") {
+                        navController.navigate("home")
+                    }
                 },
                 colors = ButtonDefaults.buttonColors(mainColor),
                 modifier = Modifier.fillMaxWidth()

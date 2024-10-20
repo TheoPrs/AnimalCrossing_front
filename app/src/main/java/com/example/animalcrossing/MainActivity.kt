@@ -64,6 +64,9 @@ class MainActivity : ComponentActivity() {
                 composable("register") {
                     RegisterScreen(navController = navController) // Passer le navController à RegisterScreen
                 }
+                composable("home") {
+                    AccueilPage()
+                }
             }
 
         }
