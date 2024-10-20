@@ -37,7 +37,8 @@ fun RegisterScreen(navController: NavHostController,viewModel: RegisterViewModel
     var password by remember { mutableStateOf("") }
     var password2 by remember { mutableStateOf("") }
     val registerState by viewModel.registerState.collectAsState()
-    val errorColor = Color.Green
+
+    val errorColor = Color.Red
     val borderColor = if (password == password2 || password2.isEmpty()) mainColor else errorColor
     Box(
         modifier = Modifier
@@ -168,9 +169,9 @@ fun RegisterScreen(navController: NavHostController,viewModel: RegisterViewModel
             onValueChange = { password2 = it },
             label = { Text("Confirmer mot de passe") },
             colors = TextFieldDefaults.outlinedTextFieldColors(
-                unfocusedLabelColor = mainColor,
+                unfocusedLabelColor = borderColor,
                 unfocusedBorderColor = borderColor,
-                focusedLabelColor = mainColor,
+                focusedLabelColor = borderColor,
                 focusedBorderColor = borderColor
             ),
             textStyle = TextStyle(color = Color.White),
@@ -187,11 +188,17 @@ fun RegisterScreen(navController: NavHostController,viewModel: RegisterViewModel
         val context = LocalContext.current
         Button(
             onClick = {
-                if (password.toString() == password2.toString()) {
-                    viewModel.register(surname, name, email, password, password2)
-                    navController.popBackStack()
-                }else {
-                    Toast.makeText(context, "Les mots de passe ne sont pas identiques.",Toast.LENGTH_SHORT).show()
+                if (!password.isNullOrEmpty() && !name.isNullOrEmpty() && !surname.isNullOrEmpty() && !email.isNullOrEmpty()) {
+                    // Vérifie si les deux mots de passe sont identiques
+                    if (password == password2) {
+                        navController.popBackStack()  // Navigation si tout est bon
+                    } else {
+                        // Affiche un toast si les mots de passe sont différents
+                        Toast.makeText(context, "Les mots de passe ne sont pas identiques.", Toast.LENGTH_SHORT).show()
+                    }
+                } else {
+                    // Affiche un toast si un ou plusieurs champs sont vides
+                    Toast.makeText(context, "Tous les champs doivent être remplis.", Toast.LENGTH_SHORT).show()
                 }
             },
             colors = ButtonDefaults.buttonColors(mainColor),

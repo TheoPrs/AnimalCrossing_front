@@ -1,6 +1,7 @@
 package com.example.loginpage
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.annotation.ColorRes
@@ -13,6 +14,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
@@ -27,6 +29,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.animalcrossing.pages.AccueilPage
 import com.example.registerpage.RegisterScreen
+import loginEmail
 
 class LoginPage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -145,12 +148,10 @@ fun LoginScreen(navController: NavHostController, viewModel: LoginViewModel = vi
             )
 
             Spacer(modifier = Modifier.height(40.dp))
-
+            val context = LocalContext.current
             Button(
                 onClick = {
-                    if(email=="azer@gmail.com" && password=="azer1234") {
-                        navController.navigate("home")
-                    }
+                    loginEmail(email, password, navController,context)
                 },
                 colors = ButtonDefaults.buttonColors(mainColor),
                 modifier = Modifier.fillMaxWidth()
