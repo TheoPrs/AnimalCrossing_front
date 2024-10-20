@@ -1,0 +1,442 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:2:1-30:12
+MERGED from [io.coil-kt:coil-compose:2.1.0] /Users/theoperus/.gradle/caches/transforms-4/60ec46b20030f0a9ac92ad8f1716a584/transformed/coil-compose-2.1.0/AndroidManifest.xml:2:1-9:12
+MERGED from [io.coil-kt:coil-compose-base:2.1.0] /Users/theoperus/.gradle/caches/transforms-4/3dd4139e798cc1e3678362026aec7de7/transformed/coil-compose-base-2.1.0/AndroidManifest.xml:2:1-9:12
+MERGED from [io.coil-kt:coil:2.1.0] /Users/theoperus/.gradle/caches/transforms-4/9a0def6d0659543fded5c57368a40205/transformed/coil-2.1.0/AndroidManifest.xml:2:1-9:12
+MERGED from [io.coil-kt:coil-base:2.1.0] /Users/theoperus/.gradle/caches/transforms-4/2c46f9d572313ab87e1131c0f55105e6/transformed/coil-base-2.1.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.navigation:navigation-common:2.8.3] /Users/theoperus/.gradle/caches/transforms-4/5e78864ae82236f16d9e2565ec8a9339/transformed/navigation-common-2.8.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.8.3] /Users/theoperus/.gradle/caches/transforms-4/8129168972459a2d9980197d69b3872f/transformed/navigation-runtime-2.8.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.3] /Users/theoperus/.gradle/caches/transforms-4/cc2b93cef9b012e2ae2dc86bd7c8efd1/transformed/navigation-common-ktx-2.8.3/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.3] /Users/theoperus/.gradle/caches/transforms-4/c1a66affccc09753f9fea7191f3c189f/transformed/navigation-runtime-ktx-2.8.3/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.8.3] /Users/theoperus/.gradle/caches/transforms-4/872e6e17e54d9fd0469adfb0d96d4860/transformed/navigation-compose-2.8.3/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /Users/theoperus/.gradle/caches/transforms-4/04e22e2ea93b45ad7603fc8bd38024fc/transformed/material3-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.6] /Users/theoperus/.gradle/caches/transforms-4/b5182030c6f0f58f52f88b6265501dec/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/feb33cb3bd05fbcfc8e4bd469b8ef843/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt.coil3:coil-compose-android:3.0.0-rc01] /Users/theoperus/.gradle/caches/transforms-4/8ae6c63490d7c9227fce2fa91f36735c/transformed/coil-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt.coil3:coil-compose-core-android:3.0.0-rc01] /Users/theoperus/.gradle/caches/transforms-4/4405039599880130c6299e818bf4d364/transformed/coil-compose-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/d6cf4f9db48ca3919929dd752b94866e/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/3842d95d06ff1ffb126b7de556fa6938/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/a0c7bc10a07d480b2f8778972ca0378c/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/808f9147a258370a44a9b6ace2028c7e/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/29f6d5acb144611a72c16f00fe702446/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/38a3fefdfb41355b6918dca31a4c5828/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/75101ad02c382060b73b6169eaba94f4/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/6ea7c3fc51da0434797d5cf164aea978/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/d0707c53bcedce921b6e77ec1c4045e2/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/4d262c5080ceb1e8ded0f75fc99447c6/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/e1fa63c6ad7f2b00ac3d2efca8e4877e/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.material:material-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/40f87e2261f44ab4c9e2fdbae2d3e585/transformed/material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/798b4c0f278b3aea471e350995fb5831/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/05810f588217fc9d47db5a4290ba6dc3/transformed/ui-test-manifest-1.7.2/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.activity:activity:1.9.2] /Users/theoperus/.gradle/caches/transforms-4/432b6573807299ce09ac665a12b1b2c7/transformed/activity-1.9.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.9.2] /Users/theoperus/.gradle/caches/transforms-4/b42aae911f85a2d1912ab28e61725afb/transformed/activity-ktx-1.9.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-compose:1.9.2] /Users/theoperus/.gradle/caches/transforms-4/e70ea99ec4497b4c338fd2f2fd6204f5/transformed/activity-compose-1.9.2/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.36.0] /Users/theoperus/.gradle/caches/transforms-4/f1ac6a26f9e762edeebff4a41996a7d7/transformed/accompanist-drawablepainter-0.36.0/AndroidManifest.xml:17:1-23:12
+MERGED from [io.github.jan-tennert.supabase:realtime-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/3841132c4864311bc6e42497d11f186a/transformed/realtime-kt-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [io.github.jan-tennert.supabase:postgrest-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/7d792750e1aed4f9892c688e4d4a4adb/transformed/postgrest-kt-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [io.github.jan-tennert.supabase:auth-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/9a04e3b824050800c0c40bb411c9c473/transformed/auth-kt-debug/AndroidManifest.xml:2:1-20:12
+MERGED from [io.github.jan-tennert.supabase:supabase-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/27004c20fb8eac4db9b160ea03d96da3/transformed/supabase-kt-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/theoperus/.gradle/caches/transforms-4/17a61f33b3450a1799e00ab6e4ba9a0f/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [io.coil-kt.coil3:coil-android:3.0.0-rc01] /Users/theoperus/.gradle/caches/transforms-4/70fe390c27a1054e5b20014f94583de2/transformed/coil-release/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt.coil3:coil-network-core-android:3.0.0-rc01] /Users/theoperus/.gradle/caches/transforms-4/2c163b7e0d890077da5c99422d115c21/transformed/coil-network-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt.coil3:coil-core-android:3.0.0-rc01] /Users/theoperus/.gradle/caches/transforms-4/240521684b64d0a2f27f6c1c45d236fd/transformed/coil-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/theoperus/.gradle/caches/transforms-4/8beba24509c2caaf9e645c061b620814/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/theoperus/.gradle/caches/transforms-4/88fa5addc7523044bdf2ef3ef1170a48/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/d353f7326b30f23e38d318912a1e0ed2/transformed/lifecycle-livedata-core-2.8.6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/5123282a3e8594c46024651309290e06/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/a59a7fdbb65081f849240d831e3f8d2e/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/520f5fa66ff73022d1af9a110e3247e3/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/57255c03bd2a9286a69ba3bfa2540bea/transformed/lifecycle-viewmodel-savedstate-2.8.6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/af64f4dd4f82cd43646f6cea2aab9d1b/transformed/lifecycle-viewmodel-ktx-2.8.6/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/1e299d831aeeadc86329ce046a849e76/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/7b66c0903ed161e0ea0fb282d37630f8/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/b2c68bd56154bff9abb624a011fcb715/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/9bb45f003c0409db8ed4e5a9e11484a4/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/theoperus/.gradle/caches/transforms-4/762b0c201d65996a7e8c90aad70ccda2/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.8.0] /Users/theoperus/.gradle/caches/transforms-4/4c2051d85216a0c3cc3ace301f349324/transformed/browser-1.8.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/theoperus/.gradle/caches/transforms-4/74b795cccc1601849babafd28e9185e5/transformed/graphics-path-1.0.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/theoperus/.gradle/caches/transforms-4/fde75aa2000779c339dc9d132e7a8a53/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/theoperus/.gradle/caches/transforms-4/ab8604c5eadf786086f425123613bc61/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/theoperus/.gradle/caches/transforms-4/5bfa28d7153d35404d4a547cd6ab9621/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/35c07899aa7ff63a1ccbd53bf503736f/transformed/core-1.13.1/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/theoperus/.gradle/caches/transforms-4/ae59c023220252e1b33c6567c7d8fa52/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/53de168c8a9118a542bad0b9bebdd41c/transformed/core-ktx-1.13.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/6897e8a37357655f9b27e1213d84a59a/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/cda0dfae9bb2e7f238231544ac8988d5/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/4ed336ae8c938e51419898f3834f2094/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/020f74acca8db3bf7c831c6662b01a03/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:17:1-35:12
+MERGED from [com.russhwolf:multiplatform-settings-coroutines-android-debug:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/135502c78f2b94d98a649f26eb51d7f3/transformed/multiplatform-settings-coroutines-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/theoperus/.gradle/caches/transforms-4/04fc2eb7073739de4feb0458a8b28f85/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/theoperus/.gradle/caches/transforms-4/79a2e6b36b684ea0c668a92a9994b046/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/8a716af2ec1a482a541a00c5140da039/transformed/startup-runtime-1.2.0/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/theoperus/.gradle/caches/transforms-4/9bb8a2b3ddb2d4e4f2b1bbabbd3dcd52/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/theoperus/.gradle/caches/transforms-4/9b08aa352eeb7a859d16127ecde70962/transformed/exifinterface-1.3.7/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/theoperus/.gradle/caches/transforms-4/23444a83c67b98e5b101f29f30c1282d/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.russhwolf:multiplatform-settings-android-debug:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/3de593d7e4ec7d0b57ae237fcd1623d9/transformed/multiplatform-settings-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [co.touchlab:kermit-android-debug:2.0.4] /Users/theoperus/.gradle/caches/transforms-4/26fe498c2a837173b8e01f53d886f6d2/transformed/kermit-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [co.touchlab:kermit-core-android-debug:2.0.4] /Users/theoperus/.gradle/caches/transforms-4/96d0ff3d6265bad7b4fa5f4440cb10a1/transformed/kermit-core-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [com.soywiz.korlibs.krypto:krypto-android:4.0.10] /Users/theoperus/.gradle/caches/transforms-4/b60d08e3c87258937755d88041b43991/transformed/krypto-debug/AndroidManifest.xml:2:1-9:12
+	package
+		INJECTED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:6:5-28:19
+INJECTED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:6:5-28:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/e1fa63c6ad7f2b00ac3d2efca8e4877e/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/e1fa63c6ad7f2b00ac3d2efca8e4877e/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/05810f588217fc9d47db5a4290ba6dc3/transformed/ui-test-manifest-1.7.2/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/05810f588217fc9d47db5a4290ba6dc3/transformed/ui-test-manifest-1.7.2/AndroidManifest.xml:22:5-26:19
+MERGED from [io.github.jan-tennert.supabase:auth-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/9a04e3b824050800c0c40bb411c9c473/transformed/auth-kt-debug/AndroidManifest.xml:8:5-18:19
+MERGED from [io.github.jan-tennert.supabase:auth-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/9a04e3b824050800c0c40bb411c9c473/transformed/auth-kt-debug/AndroidManifest.xml:8:5-18:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/theoperus/.gradle/caches/transforms-4/17a61f33b3450a1799e00ab6e4ba9a0f/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/theoperus/.gradle/caches/transforms-4/17a61f33b3450a1799e00ab6e4ba9a0f/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/7b66c0903ed161e0ea0fb282d37630f8/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/7b66c0903ed161e0ea0fb282d37630f8/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/35c07899aa7ff63a1ccbd53bf503736f/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/35c07899aa7ff63a1ccbd53bf503736f/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
+MERGED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/020f74acca8db3bf7c831c6662b01a03/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:23:5-33:19
+MERGED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/020f74acca8db3bf7c831c6662b01a03/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/theoperus/.gradle/caches/transforms-4/04fc2eb7073739de4feb0458a8b28f85/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/theoperus/.gradle/caches/transforms-4/04fc2eb7073739de4feb0458a8b28f85/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/8a716af2ec1a482a541a00c5140da039/transformed/startup-runtime-1.2.0/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.startup:startup-runtime:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/8a716af2ec1a482a541a00c5140da039/transformed/startup-runtime-1.2.0/AndroidManifest.xml:23:5-29:19
+	android:extractNativeLibs
+		INJECTED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/35c07899aa7ff63a1ccbd53bf503736f/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:11:9-41
+	android:fullBackupContent
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:9:9-54
+	android:roundIcon
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:12:9-54
+	tools:targetApi
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:15:9-29
+	android:icon
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:7:9-35
+	android:theme
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:14:9-52
+	android:dataExtractionRules
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:8:9-65
+activity#com.example.animalcrossing.MainActivity
+ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:16:9-27:20
+	android:label
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:19:13-45
+	android:exported
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:18:13-36
+	android:theme
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:20:13-56
+	android:name
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:17:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:22:13-26:29
+action#android.intent.action.MAIN
+ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:23:17-69
+	android:name
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:23:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml:25:27-74
+uses-sdk
+INJECTED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml
+INJECTED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml
+MERGED from [io.coil-kt:coil-compose:2.1.0] /Users/theoperus/.gradle/caches/transforms-4/60ec46b20030f0a9ac92ad8f1716a584/transformed/coil-compose-2.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-compose:2.1.0] /Users/theoperus/.gradle/caches/transforms-4/60ec46b20030f0a9ac92ad8f1716a584/transformed/coil-compose-2.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-compose-base:2.1.0] /Users/theoperus/.gradle/caches/transforms-4/3dd4139e798cc1e3678362026aec7de7/transformed/coil-compose-base-2.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-compose-base:2.1.0] /Users/theoperus/.gradle/caches/transforms-4/3dd4139e798cc1e3678362026aec7de7/transformed/coil-compose-base-2.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil:2.1.0] /Users/theoperus/.gradle/caches/transforms-4/9a0def6d0659543fded5c57368a40205/transformed/coil-2.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil:2.1.0] /Users/theoperus/.gradle/caches/transforms-4/9a0def6d0659543fded5c57368a40205/transformed/coil-2.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-base:2.1.0] /Users/theoperus/.gradle/caches/transforms-4/2c46f9d572313ab87e1131c0f55105e6/transformed/coil-base-2.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-base:2.1.0] /Users/theoperus/.gradle/caches/transforms-4/2c46f9d572313ab87e1131c0f55105e6/transformed/coil-base-2.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.navigation:navigation-common:2.8.3] /Users/theoperus/.gradle/caches/transforms-4/5e78864ae82236f16d9e2565ec8a9339/transformed/navigation-common-2.8.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.8.3] /Users/theoperus/.gradle/caches/transforms-4/5e78864ae82236f16d9e2565ec8a9339/transformed/navigation-common-2.8.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.8.3] /Users/theoperus/.gradle/caches/transforms-4/8129168972459a2d9980197d69b3872f/transformed/navigation-runtime-2.8.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.8.3] /Users/theoperus/.gradle/caches/transforms-4/8129168972459a2d9980197d69b3872f/transformed/navigation-runtime-2.8.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.3] /Users/theoperus/.gradle/caches/transforms-4/cc2b93cef9b012e2ae2dc86bd7c8efd1/transformed/navigation-common-ktx-2.8.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.3] /Users/theoperus/.gradle/caches/transforms-4/cc2b93cef9b012e2ae2dc86bd7c8efd1/transformed/navigation-common-ktx-2.8.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.3] /Users/theoperus/.gradle/caches/transforms-4/c1a66affccc09753f9fea7191f3c189f/transformed/navigation-runtime-ktx-2.8.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.3] /Users/theoperus/.gradle/caches/transforms-4/c1a66affccc09753f9fea7191f3c189f/transformed/navigation-runtime-ktx-2.8.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.8.3] /Users/theoperus/.gradle/caches/transforms-4/872e6e17e54d9fd0469adfb0d96d4860/transformed/navigation-compose-2.8.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.8.3] /Users/theoperus/.gradle/caches/transforms-4/872e6e17e54d9fd0469adfb0d96d4860/transformed/navigation-compose-2.8.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /Users/theoperus/.gradle/caches/transforms-4/04e22e2ea93b45ad7603fc8bd38024fc/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /Users/theoperus/.gradle/caches/transforms-4/04e22e2ea93b45ad7603fc8bd38024fc/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.6] /Users/theoperus/.gradle/caches/transforms-4/b5182030c6f0f58f52f88b6265501dec/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.6] /Users/theoperus/.gradle/caches/transforms-4/b5182030c6f0f58f52f88b6265501dec/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/feb33cb3bd05fbcfc8e4bd469b8ef843/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/feb33cb3bd05fbcfc8e4bd469b8ef843/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-compose-android:3.0.0-rc01] /Users/theoperus/.gradle/caches/transforms-4/8ae6c63490d7c9227fce2fa91f36735c/transformed/coil-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-compose-android:3.0.0-rc01] /Users/theoperus/.gradle/caches/transforms-4/8ae6c63490d7c9227fce2fa91f36735c/transformed/coil-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-compose-core-android:3.0.0-rc01] /Users/theoperus/.gradle/caches/transforms-4/4405039599880130c6299e818bf4d364/transformed/coil-compose-core-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-compose-core-android:3.0.0-rc01] /Users/theoperus/.gradle/caches/transforms-4/4405039599880130c6299e818bf4d364/transformed/coil-compose-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/d6cf4f9db48ca3919929dd752b94866e/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/d6cf4f9db48ca3919929dd752b94866e/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/3842d95d06ff1ffb126b7de556fa6938/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/3842d95d06ff1ffb126b7de556fa6938/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/a0c7bc10a07d480b2f8778972ca0378c/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/a0c7bc10a07d480b2f8778972ca0378c/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/808f9147a258370a44a9b6ace2028c7e/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/808f9147a258370a44a9b6ace2028c7e/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/29f6d5acb144611a72c16f00fe702446/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/29f6d5acb144611a72c16f00fe702446/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/38a3fefdfb41355b6918dca31a4c5828/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/38a3fefdfb41355b6918dca31a4c5828/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/75101ad02c382060b73b6169eaba94f4/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/75101ad02c382060b73b6169eaba94f4/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/6ea7c3fc51da0434797d5cf164aea978/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/6ea7c3fc51da0434797d5cf164aea978/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/d0707c53bcedce921b6e77ec1c4045e2/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/d0707c53bcedce921b6e77ec1c4045e2/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/4d262c5080ceb1e8ded0f75fc99447c6/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/4d262c5080ceb1e8ded0f75fc99447c6/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/e1fa63c6ad7f2b00ac3d2efca8e4877e/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/e1fa63c6ad7f2b00ac3d2efca8e4877e/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/40f87e2261f44ab4c9e2fdbae2d3e585/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/40f87e2261f44ab4c9e2fdbae2d3e585/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/798b4c0f278b3aea471e350995fb5831/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/798b4c0f278b3aea471e350995fb5831/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/05810f588217fc9d47db5a4290ba6dc3/transformed/ui-test-manifest-1.7.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/05810f588217fc9d47db5a4290ba6dc3/transformed/ui-test-manifest-1.7.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.2] /Users/theoperus/.gradle/caches/transforms-4/432b6573807299ce09ac665a12b1b2c7/transformed/activity-1.9.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.2] /Users/theoperus/.gradle/caches/transforms-4/432b6573807299ce09ac665a12b1b2c7/transformed/activity-1.9.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.2] /Users/theoperus/.gradle/caches/transforms-4/b42aae911f85a2d1912ab28e61725afb/transformed/activity-ktx-1.9.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.2] /Users/theoperus/.gradle/caches/transforms-4/b42aae911f85a2d1912ab28e61725afb/transformed/activity-ktx-1.9.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.2] /Users/theoperus/.gradle/caches/transforms-4/e70ea99ec4497b4c338fd2f2fd6204f5/transformed/activity-compose-1.9.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.2] /Users/theoperus/.gradle/caches/transforms-4/e70ea99ec4497b4c338fd2f2fd6204f5/transformed/activity-compose-1.9.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.36.0] /Users/theoperus/.gradle/caches/transforms-4/f1ac6a26f9e762edeebff4a41996a7d7/transformed/accompanist-drawablepainter-0.36.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.36.0] /Users/theoperus/.gradle/caches/transforms-4/f1ac6a26f9e762edeebff4a41996a7d7/transformed/accompanist-drawablepainter-0.36.0/AndroidManifest.xml:21:5-44
+MERGED from [io.github.jan-tennert.supabase:realtime-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/3841132c4864311bc6e42497d11f186a/transformed/realtime-kt-debug/AndroidManifest.xml:5:5-44
+MERGED from [io.github.jan-tennert.supabase:realtime-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/3841132c4864311bc6e42497d11f186a/transformed/realtime-kt-debug/AndroidManifest.xml:5:5-44
+MERGED from [io.github.jan-tennert.supabase:postgrest-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/7d792750e1aed4f9892c688e4d4a4adb/transformed/postgrest-kt-debug/AndroidManifest.xml:5:5-44
+MERGED from [io.github.jan-tennert.supabase:postgrest-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/7d792750e1aed4f9892c688e4d4a4adb/transformed/postgrest-kt-debug/AndroidManifest.xml:5:5-44
+MERGED from [io.github.jan-tennert.supabase:auth-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/9a04e3b824050800c0c40bb411c9c473/transformed/auth-kt-debug/AndroidManifest.xml:6:5-44
+MERGED from [io.github.jan-tennert.supabase:auth-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/9a04e3b824050800c0c40bb411c9c473/transformed/auth-kt-debug/AndroidManifest.xml:6:5-44
+MERGED from [io.github.jan-tennert.supabase:supabase-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/27004c20fb8eac4db9b160ea03d96da3/transformed/supabase-kt-debug/AndroidManifest.xml:5:5-44
+MERGED from [io.github.jan-tennert.supabase:supabase-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/27004c20fb8eac4db9b160ea03d96da3/transformed/supabase-kt-debug/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/theoperus/.gradle/caches/transforms-4/17a61f33b3450a1799e00ab6e4ba9a0f/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/theoperus/.gradle/caches/transforms-4/17a61f33b3450a1799e00ab6e4ba9a0f/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [io.coil-kt.coil3:coil-android:3.0.0-rc01] /Users/theoperus/.gradle/caches/transforms-4/70fe390c27a1054e5b20014f94583de2/transformed/coil-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-android:3.0.0-rc01] /Users/theoperus/.gradle/caches/transforms-4/70fe390c27a1054e5b20014f94583de2/transformed/coil-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-network-core-android:3.0.0-rc01] /Users/theoperus/.gradle/caches/transforms-4/2c163b7e0d890077da5c99422d115c21/transformed/coil-network-core-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-network-core-android:3.0.0-rc01] /Users/theoperus/.gradle/caches/transforms-4/2c163b7e0d890077da5c99422d115c21/transformed/coil-network-core-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-core-android:3.0.0-rc01] /Users/theoperus/.gradle/caches/transforms-4/240521684b64d0a2f27f6c1c45d236fd/transformed/coil-core-release/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt.coil3:coil-core-android:3.0.0-rc01] /Users/theoperus/.gradle/caches/transforms-4/240521684b64d0a2f27f6c1c45d236fd/transformed/coil-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/theoperus/.gradle/caches/transforms-4/8beba24509c2caaf9e645c061b620814/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/theoperus/.gradle/caches/transforms-4/8beba24509c2caaf9e645c061b620814/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/theoperus/.gradle/caches/transforms-4/88fa5addc7523044bdf2ef3ef1170a48/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/theoperus/.gradle/caches/transforms-4/88fa5addc7523044bdf2ef3ef1170a48/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/d353f7326b30f23e38d318912a1e0ed2/transformed/lifecycle-livedata-core-2.8.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/d353f7326b30f23e38d318912a1e0ed2/transformed/lifecycle-livedata-core-2.8.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/5123282a3e8594c46024651309290e06/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/5123282a3e8594c46024651309290e06/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/a59a7fdbb65081f849240d831e3f8d2e/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/a59a7fdbb65081f849240d831e3f8d2e/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/520f5fa66ff73022d1af9a110e3247e3/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/520f5fa66ff73022d1af9a110e3247e3/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/57255c03bd2a9286a69ba3bfa2540bea/transformed/lifecycle-viewmodel-savedstate-2.8.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/57255c03bd2a9286a69ba3bfa2540bea/transformed/lifecycle-viewmodel-savedstate-2.8.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/af64f4dd4f82cd43646f6cea2aab9d1b/transformed/lifecycle-viewmodel-ktx-2.8.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/af64f4dd4f82cd43646f6cea2aab9d1b/transformed/lifecycle-viewmodel-ktx-2.8.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/1e299d831aeeadc86329ce046a849e76/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/1e299d831aeeadc86329ce046a849e76/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/7b66c0903ed161e0ea0fb282d37630f8/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/7b66c0903ed161e0ea0fb282d37630f8/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/b2c68bd56154bff9abb624a011fcb715/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/b2c68bd56154bff9abb624a011fcb715/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/9bb45f003c0409db8ed4e5a9e11484a4/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/9bb45f003c0409db8ed4e5a9e11484a4/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/theoperus/.gradle/caches/transforms-4/762b0c201d65996a7e8c90aad70ccda2/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/theoperus/.gradle/caches/transforms-4/762b0c201d65996a7e8c90aad70ccda2/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.8.0] /Users/theoperus/.gradle/caches/transforms-4/4c2051d85216a0c3cc3ace301f349324/transformed/browser-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.browser:browser:1.8.0] /Users/theoperus/.gradle/caches/transforms-4/4c2051d85216a0c3cc3ace301f349324/transformed/browser-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/theoperus/.gradle/caches/transforms-4/74b795cccc1601849babafd28e9185e5/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/theoperus/.gradle/caches/transforms-4/74b795cccc1601849babafd28e9185e5/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/theoperus/.gradle/caches/transforms-4/fde75aa2000779c339dc9d132e7a8a53/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/theoperus/.gradle/caches/transforms-4/fde75aa2000779c339dc9d132e7a8a53/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/theoperus/.gradle/caches/transforms-4/ab8604c5eadf786086f425123613bc61/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/theoperus/.gradle/caches/transforms-4/ab8604c5eadf786086f425123613bc61/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/theoperus/.gradle/caches/transforms-4/5bfa28d7153d35404d4a547cd6ab9621/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/theoperus/.gradle/caches/transforms-4/5bfa28d7153d35404d4a547cd6ab9621/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/35c07899aa7ff63a1ccbd53bf503736f/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/35c07899aa7ff63a1ccbd53bf503736f/transformed/core-1.13.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/theoperus/.gradle/caches/transforms-4/ae59c023220252e1b33c6567c7d8fa52/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/theoperus/.gradle/caches/transforms-4/ae59c023220252e1b33c6567c7d8fa52/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/53de168c8a9118a542bad0b9bebdd41c/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/53de168c8a9118a542bad0b9bebdd41c/transformed/core-ktx-1.13.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/6897e8a37357655f9b27e1213d84a59a/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/6897e8a37357655f9b27e1213d84a59a/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/cda0dfae9bb2e7f238231544ac8988d5/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/cda0dfae9bb2e7f238231544ac8988d5/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/4ed336ae8c938e51419898f3834f2094/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/4ed336ae8c938e51419898f3834f2094/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/020f74acca8db3bf7c831c6662b01a03/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:21:5-44
+MERGED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/020f74acca8db3bf7c831c6662b01a03/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:21:5-44
+MERGED from [com.russhwolf:multiplatform-settings-coroutines-android-debug:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/135502c78f2b94d98a649f26eb51d7f3/transformed/multiplatform-settings-coroutines-debug/AndroidManifest.xml:5:5-44
+MERGED from [com.russhwolf:multiplatform-settings-coroutines-android-debug:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/135502c78f2b94d98a649f26eb51d7f3/transformed/multiplatform-settings-coroutines-debug/AndroidManifest.xml:5:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/theoperus/.gradle/caches/transforms-4/04fc2eb7073739de4feb0458a8b28f85/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/theoperus/.gradle/caches/transforms-4/04fc2eb7073739de4feb0458a8b28f85/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/theoperus/.gradle/caches/transforms-4/79a2e6b36b684ea0c668a92a9994b046/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/theoperus/.gradle/caches/transforms-4/79a2e6b36b684ea0c668a92a9994b046/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/8a716af2ec1a482a541a00c5140da039/transformed/startup-runtime-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/8a716af2ec1a482a541a00c5140da039/transformed/startup-runtime-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/theoperus/.gradle/caches/transforms-4/9bb8a2b3ddb2d4e4f2b1bbabbd3dcd52/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/theoperus/.gradle/caches/transforms-4/9bb8a2b3ddb2d4e4f2b1bbabbd3dcd52/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/theoperus/.gradle/caches/transforms-4/9b08aa352eeb7a859d16127ecde70962/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /Users/theoperus/.gradle/caches/transforms-4/9b08aa352eeb7a859d16127ecde70962/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/theoperus/.gradle/caches/transforms-4/23444a83c67b98e5b101f29f30c1282d/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/theoperus/.gradle/caches/transforms-4/23444a83c67b98e5b101f29f30c1282d/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.russhwolf:multiplatform-settings-android-debug:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/3de593d7e4ec7d0b57ae237fcd1623d9/transformed/multiplatform-settings-debug/AndroidManifest.xml:5:5-44
+MERGED from [com.russhwolf:multiplatform-settings-android-debug:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/3de593d7e4ec7d0b57ae237fcd1623d9/transformed/multiplatform-settings-debug/AndroidManifest.xml:5:5-44
+MERGED from [co.touchlab:kermit-android-debug:2.0.4] /Users/theoperus/.gradle/caches/transforms-4/26fe498c2a837173b8e01f53d886f6d2/transformed/kermit-debug/AndroidManifest.xml:5:5-44
+MERGED from [co.touchlab:kermit-android-debug:2.0.4] /Users/theoperus/.gradle/caches/transforms-4/26fe498c2a837173b8e01f53d886f6d2/transformed/kermit-debug/AndroidManifest.xml:5:5-44
+MERGED from [co.touchlab:kermit-core-android-debug:2.0.4] /Users/theoperus/.gradle/caches/transforms-4/96d0ff3d6265bad7b4fa5f4440cb10a1/transformed/kermit-core-debug/AndroidManifest.xml:5:5-44
+MERGED from [co.touchlab:kermit-core-android-debug:2.0.4] /Users/theoperus/.gradle/caches/transforms-4/96d0ff3d6265bad7b4fa5f4440cb10a1/transformed/kermit-core-debug/AndroidManifest.xml:5:5-44
+MERGED from [com.soywiz.korlibs.krypto:krypto-android:4.0.10] /Users/theoperus/.gradle/caches/transforms-4/b60d08e3c87258937755d88041b43991/transformed/krypto-debug/AndroidManifest.xml:5:5-7:41
+MERGED from [com.soywiz.korlibs.krypto:krypto-android:4.0.10] /Users/theoperus/.gradle/caches/transforms-4/b60d08e3c87258937755d88041b43991/transformed/krypto-debug/AndroidManifest.xml:5:5-7:41
+	android:targetSdkVersion
+		INJECTED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/theoperus/Documents/AP4/Android/AnimalCrossing_front/app/src/main/AndroidManifest.xml
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/e1fa63c6ad7f2b00ac3d2efca8e4877e/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/e1fa63c6ad7f2b00ac3d2efca8e4877e/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/e1fa63c6ad7f2b00ac3d2efca8e4877e/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/05810f588217fc9d47db5a4290ba6dc3/transformed/ui-test-manifest-1.7.2/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/05810f588217fc9d47db5a4290ba6dc3/transformed/ui-test-manifest-1.7.2/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.7.2] /Users/theoperus/.gradle/caches/transforms-4/05810f588217fc9d47db5a4290ba6dc3/transformed/ui-test-manifest-1.7.2/AndroidManifest.xml:24:13-63
+provider#androidx.startup.InitializationProvider
+ADDED from [io.github.jan-tennert.supabase:auth-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/9a04e3b824050800c0c40bb411c9c473/transformed/auth-kt-debug/AndroidManifest.xml:9:9-17:20
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/theoperus/.gradle/caches/transforms-4/17a61f33b3450a1799e00ab6e4ba9a0f/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/theoperus/.gradle/caches/transforms-4/17a61f33b3450a1799e00ab6e4ba9a0f/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/7b66c0903ed161e0ea0fb282d37630f8/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/7b66c0903ed161e0ea0fb282d37630f8/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:24:9-32:20
+MERGED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/020f74acca8db3bf7c831c6662b01a03/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:24:9-32:20
+MERGED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/020f74acca8db3bf7c831c6662b01a03/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/8a716af2ec1a482a541a00c5140da039/transformed/startup-runtime-1.2.0/AndroidManifest.xml:24:9-28:34
+MERGED from [androidx.startup:startup-runtime:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/8a716af2ec1a482a541a00c5140da039/transformed/startup-runtime-1.2.0/AndroidManifest.xml:24:9-28:34
+	tools:node
+		ADDED from [io.github.jan-tennert.supabase:auth-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/9a04e3b824050800c0c40bb411c9c473/transformed/auth-kt-debug/AndroidManifest.xml:13:13-31
+	android:authorities
+		ADDED from [io.github.jan-tennert.supabase:auth-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/9a04e3b824050800c0c40bb411c9c473/transformed/auth-kt-debug/AndroidManifest.xml:11:13-68
+	android:exported
+		ADDED from [io.github.jan-tennert.supabase:auth-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/9a04e3b824050800c0c40bb411c9c473/transformed/auth-kt-debug/AndroidManifest.xml:12:13-37
+	android:name
+		ADDED from [io.github.jan-tennert.supabase:auth-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/9a04e3b824050800c0c40bb411c9c473/transformed/auth-kt-debug/AndroidManifest.xml:10:13-67
+meta-data#io.github.jan.supabase.auth.SupabaseInitializer
+ADDED from [io.github.jan-tennert.supabase:auth-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/9a04e3b824050800c0c40bb411c9c473/transformed/auth-kt-debug/AndroidManifest.xml:14:13-16:52
+	android:value
+		ADDED from [io.github.jan-tennert.supabase:auth-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/9a04e3b824050800c0c40bb411c9c473/transformed/auth-kt-debug/AndroidManifest.xml:16:17-49
+	android:name
+		ADDED from [io.github.jan-tennert.supabase:auth-kt-android-debug:3.0.1] /Users/theoperus/.gradle/caches/transforms-4/9a04e3b824050800c0c40bb411c9c473/transformed/auth-kt-debug/AndroidManifest.xml:15:17-79
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/theoperus/.gradle/caches/transforms-4/17a61f33b3450a1799e00ab6e4ba9a0f/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/theoperus/.gradle/caches/transforms-4/17a61f33b3450a1799e00ab6e4ba9a0f/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/theoperus/.gradle/caches/transforms-4/17a61f33b3450a1799e00ab6e4ba9a0f/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/7b66c0903ed161e0ea0fb282d37630f8/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/7b66c0903ed161e0ea0fb282d37630f8/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.6] /Users/theoperus/.gradle/caches/transforms-4/7b66c0903ed161e0ea0fb282d37630f8/transformed/lifecycle-process-2.8.6/AndroidManifest.xml:30:17-78
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/35c07899aa7ff63a1ccbd53bf503736f/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/35c07899aa7ff63a1ccbd53bf503736f/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/35c07899aa7ff63a1ccbd53bf503736f/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+permission#com.example.animalcrossing.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/35c07899aa7ff63a1ccbd53bf503736f/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/35c07899aa7ff63a1ccbd53bf503736f/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/35c07899aa7ff63a1ccbd53bf503736f/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/35c07899aa7ff63a1ccbd53bf503736f/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/35c07899aa7ff63a1ccbd53bf503736f/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+uses-permission#com.example.animalcrossing.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/35c07899aa7ff63a1ccbd53bf503736f/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] /Users/theoperus/.gradle/caches/transforms-4/35c07899aa7ff63a1ccbd53bf503736f/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+meta-data#com.russhwolf.settings.SettingsInitializer
+ADDED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/020f74acca8db3bf7c831c6662b01a03/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/020f74acca8db3bf7c831c6662b01a03/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.2.0] /Users/theoperus/.gradle/caches/transforms-4/020f74acca8db3bf7c831c6662b01a03/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:30:17-74
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/theoperus/.gradle/caches/transforms-4/dac4279ea5fc60d4160e64357f49de0d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:50:25-92
