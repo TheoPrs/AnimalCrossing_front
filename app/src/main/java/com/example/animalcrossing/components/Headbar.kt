@@ -50,6 +50,7 @@ fun HeadBar(navController: NavHostController) {
                 fontWeight = FontWeight.Bold
             ),
             modifier = Modifier.padding(top = 16.dp)
+                .padding(bottom = 20.dp)
         )
     }
 }

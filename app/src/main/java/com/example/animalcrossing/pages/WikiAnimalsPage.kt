@@ -157,7 +157,7 @@ fun SearchBar(hint: String, onTextChange: (String) -> Unit) {
                 androidx.compose.material3.Text(
                     text = hint,
                     style = TextStyle(color = Color(0xFF755F4E), fontSize = 16.sp),
-                    modifier = Modifier.padding(start = 50.dp)
+//                    modifier = Modifier.padding(start = 10.dp)
                 )
             }
         }
