@@ -102,24 +102,26 @@ fun NavigationGraph(navController: NavHostController) {
             val poids = backStackEntry.arguments?.getInt("poids") ?: 0
             val imageRes = backStackEntry.arguments?.getInt("imageRes")
 
-        AnimalPage(navController = navController, name = name, age = age, poids = poids, imageRes = imageRes)
-        composable("details/{animalId}") { backStackEntry ->
-            val animalIdString = backStackEntry.arguments?.getString("animalId") // Récupère comme String
-            val animalId = animalIdString?.toIntOrNull() // Convertit en Int, retourne null si la conversion échoue
-            Log.i("animalId","${animalId}")
-            if (animalId != null) {
-                WikiAnimalsDetails(animalId)
+            AnimalPage(
+                navController = navController,
+                name = name,
+                age = age,
+                poids = poids,
+                imageRes = imageRes
+            )
+            composable("details/{animalId}") { backStackEntry ->
+                val animalIdString =
+                    backStackEntry.arguments?.getString("animalId") // Récupère comme String
+                val animalId =
+                    animalIdString?.toIntOrNull() // Convertit en Int, retourne null si la conversion échoue
+                Log.i("animalId", "${animalId}")
+                if (animalId != null) {
+                    WikiAnimalsDetails(animalId)
+                }
             }
         }
     }
 }
-
-
-@Composable
-fun SearchScreen() {
-
-}
-
 
 
 
