@@ -39,7 +39,6 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import coil.compose.AsyncImage
 import com.example.animalcrossing.data.entities.AnimalWiki
-
 import com.example.animalcrossing.viewmodels.AnimalWikiListViewModel
 
 @Composable
@@ -58,7 +57,7 @@ fun AnimalsBox(
         AnimalImages(animal.image_path)
         Text(text = animal.name, modifier = Modifier
             .align(Alignment.CenterStart)
-            .padding(start = 120.dp), fontFamily = FontFamily.Serif
+            .padding(start = 150.dp), fontFamily = FontFamily.Serif
         )
     }
 }
@@ -120,41 +119,47 @@ fun SearchBar(hint: String, onTextChange: (String) -> Unit) {
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(top = 24.dp)
-            .height(50.dp)
-            .background(Color(0xFFEAC9B8), CircleShape),
-        contentAlignment = Alignment.CenterStart
+            .padding(top = 24.dp),
+        contentAlignment = Alignment.Center
     ) {
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            modifier = Modifier.padding(horizontal = 16.dp)
+        Box(
+            modifier = Modifier
+                .width(350.dp)
+                .height(50.dp)
+                .background(Color(0xFFEAC9B8), CircleShape),
+            contentAlignment = Alignment.Center
         ) {
-            Icon(
-                imageVector = Icons.Default.Search,
-                contentDescription = "Search",
-                tint = Color(0xFF755F4E),
-                modifier = Modifier.size(20.dp)
-            )
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.padding(horizontal = 16.dp)
+            ) {
+                Icon(
+                    imageVector = Icons.Default.Search,
+                    contentDescription = "Search",
+                    tint = Color(0xFF755F4E),
+                    modifier = Modifier.size(20.dp)
+                )
 
-            BasicTextField(
-                value = text,
-                onValueChange = {
-                    text = it
-                    onTextChange(it)
-                },
-                textStyle = TextStyle(color = Color.Black, fontSize = 16.sp),
-                modifier = Modifier
-                    .weight(1f)
-                    .padding(horizontal = 8.dp)
-            )
-        }
+                BasicTextField(
+                    value = text,
+                    onValueChange = {
+                        text = it
+                        onTextChange(it)
+                    },
+                    textStyle = TextStyle(color = Color.Black, fontSize = 16.sp),
+                    modifier = Modifier
+                        .weight(1f)
+                        .padding(horizontal = 8.dp)
+                )
+            }
 
-        if (text.isEmpty()) {
-            androidx.compose.material3.Text(
-                text = hint,
-                style = TextStyle(color = Color(0xFF755F4E), fontSize = 16.sp),
-                modifier = Modifier.padding(start = 50.dp)
-            )
+            if (text.isEmpty()) {
+                androidx.compose.material3.Text(
+                    text = hint,
+                    style = TextStyle(color = Color(0xFF755F4E), fontSize = 16.sp),
+                    modifier = Modifier.padding(start = 50.dp)
+                )
+            }
         }
     }
 }
