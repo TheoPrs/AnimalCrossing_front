@@ -82,7 +82,9 @@ fun AnimalItem(animal: Animal, navController: NavHostController) {
             .background(Color(0xFFEAC9B8), CircleShape)
             .border(width = 1.dp, color = Color.Gray, shape = CircleShape)
             .clickable {
-
+                run {
+                    navController.navigate("animalPage/${animal.name}/${animal.age}/${animal.poids}/${animal.imageRes ?: ""}")
+                }
             }
     ) {
         if (animal.imageRes != null) {
