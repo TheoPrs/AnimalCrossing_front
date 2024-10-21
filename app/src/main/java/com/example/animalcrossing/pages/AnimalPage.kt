@@ -16,11 +16,15 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-
+import android.content.Context
+import androidx.compose.runtime.*
+import androidx.compose.ui.platform.LocalContext
+import kotlinx.coroutines.launch
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import com.example.animalcrossing.data.datasource.animal.FeedingStatusManager
 
 
 @Composable
@@ -101,15 +105,23 @@ fun AnimalPage(
 
 @Composable
 fun AnimalFeedingStatus(animalName: String) {
+    val context = LocalContext.current
+    val feedingStatusManager = remember { FeedingStatusManager(context) }
+    val scope = rememberCoroutineScope()
+
+    // Observe the stored feeding status for Monday
+    val mondayFeedingStatus by feedingStatusManager.mondayFeedingStatus.collectAsState(initial = false)
+
     val daysOfWeek = listOf("Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim")
     val feedingStatus = remember { Array(7) { mutableStateOf(false) } }
+
+    // Initialize the Monday status with the stored value
+    feedingStatus[0].value = mondayFeedingStatus
 
     Column(
         modifier = Modifier
             .fillMaxWidth()
-
             .background(Color(0xFFF4D6CC), shape = MaterialTheme.shapes.medium)
-
     ) {
         Text(
             text = "Avez-vous nourri $animalName ?",
@@ -119,7 +131,6 @@ fun AnimalFeedingStatus(animalName: String) {
         )
 
         Spacer(modifier = Modifier.height(16.dp))
-
 
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -131,6 +142,11 @@ fun AnimalFeedingStatus(animalName: String) {
                         isFed = feedingStatus[i].value,
                         onClick = {
                             feedingStatus[i].value = !feedingStatus[i].value
+                            if (i == 0) {
+                                scope.launch {
+                                    feedingStatusManager.saveMondayFeedingStatus(feedingStatus[0].value)
+                                }
+                            }
                         }
                     )
                     Text(
