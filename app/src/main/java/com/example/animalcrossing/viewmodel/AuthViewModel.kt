@@ -19,7 +19,7 @@ fun NavigationApp(navController: NavHostController) {
             RegisterScreen(navController) // Écran de création de compte
         }
         composable("home") {
-            AccueilPage()
+            AccueilPage(navController)
         }
     }
 }

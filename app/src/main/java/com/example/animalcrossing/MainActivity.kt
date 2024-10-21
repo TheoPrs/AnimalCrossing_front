@@ -98,7 +98,7 @@ fun MainScreen() {
 @Composable
 fun NavigationGraph(navController: NavHostController) {
     NavHost(navController = navController, startDestination = "login") {
-        composable("home") { AccueilPage() }
+        composable("home") { AccueilPage(navController) }
         composable("search") { WikiAnimalsPage(navController) }
         composable("profile") { ProfilePage(navController) }
         composable("login") {
