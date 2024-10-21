@@ -27,6 +27,7 @@ fun HeadBar(navController: NavHostController) {
 
     val pageTitle = when (currentRoute) {
         "home" -> "Accueil"
+        "log" -> "Connexion"
         "search" -> "Recherche"
         "profile" -> "Profil"
         else -> "Animal Crossing"
@@ -49,6 +50,7 @@ fun HeadBar(navController: NavHostController) {
                 fontWeight = FontWeight.Bold
             ),
             modifier = Modifier.padding(top = 16.dp)
+                .padding(bottom = 20.dp)
         )
     }
 }

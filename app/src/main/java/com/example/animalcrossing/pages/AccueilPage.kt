@@ -26,7 +26,7 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.example.animalcrossing.R
-import com.example.animalcrossing.components.Animal
+import com.example.animalcrossing.components.AnimalCard
 import com.example.animalcrossing.components.AnimalList
 
 
@@ -36,9 +36,9 @@ fun AccueilPage(viewModel: AnimalFactViewModel = viewModel()) {
     val animalFact by viewModel.animalFact.collectAsState()
 
     val animals = listOf(
-        Animal(name = "FouFou", hasEatenToday = true, imageRes = R.drawable.image_foufou),
-        Animal(name = "Rex", hasEatenToday = false, imageRes = R.drawable.image_rex),
-        Animal(name = "Bella", hasEatenToday = true, imageRes = R.drawable.image_bella)
+        AnimalCard(name = "FouFou", hasEatenToday = true, imageRes = R.drawable.image_foufou),
+        AnimalCard(name = "Rex", hasEatenToday = false, imageRes = R.drawable.image_rex),
+        AnimalCard(name = "Bella", hasEatenToday = true, imageRes = R.drawable.image_bella)
     )
 
     LaunchedEffect(Unit) {
@@ -53,12 +53,6 @@ fun AccueilPage(viewModel: AnimalFactViewModel = viewModel()) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Top
     ) {
-
-        // Barre de recherche
-        //SearchBar(
-        //    hint = "Search for an animal"
-        //)
-
 
         animalFact?.let { fact ->
             Text(
@@ -81,52 +75,4 @@ fun AccueilPage(viewModel: AnimalFactViewModel = viewModel()) {
     }
 }
 
-@Composable
-fun SearchBar(hint: String) {
-    var text by remember { mutableStateOf("") }
 
-    Box(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(top = 24.dp)
-            .height(50.dp)
-            .background(Color(0xFFEAC9B8), CircleShape),
-        contentAlignment = Alignment.CenterStart
-    ) {
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            modifier = Modifier.padding(horizontal = 16.dp)
-        ) {
-            Icon(
-                imageVector = Icons.Default.Search,
-                contentDescription = "Search",
-                tint = Color(0xFF755F4E),
-                modifier = Modifier.size(20.dp)
-            )
-
-            BasicTextField(
-                value = text,
-                onValueChange = { text = it },
-                textStyle = TextStyle(color = Color.Black, fontSize = 16.sp),
-                modifier = Modifier
-                    .weight(1f)
-                    .padding(horizontal = 8.dp)
-            )
-
-            Icon(
-                imageVector = Icons.Default.Add,
-                contentDescription = "Add",
-                tint = Color(0xFF755F4E),
-                modifier = Modifier.size(24.dp)
-            )
-        }
-
-        if (text.isEmpty()) {
-            Text(
-                text = hint,
-                style = TextStyle(color = Color(0xFF755F4E), fontSize = 16.sp),
-                modifier = Modifier.padding(start = 40.dp)
-            )
-        }
-    }
-}
