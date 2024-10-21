@@ -14,6 +14,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
@@ -22,6 +23,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.animalcrossing.components.BottomNavigationBar
@@ -57,7 +59,9 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            val navController = rememberNavController()
             MainScreen()
+        //LoginScreen(navController)
 //            UserList()
         }
     }
@@ -66,11 +70,20 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainScreen() {
     val navController = rememberNavController()
-
+    val currentBackStackEntry by navController.currentBackStackEntryAsState()
+    val currentDestination = currentBackStackEntry?.destination?.route
     MaterialTheme {
         Scaffold(
-            topBar = { HeadBar(navController = navController) },
-            bottomBar = { BottomNavigationBar(navController) }
+            topBar = {
+                if (currentDestination != "login" && currentDestination != "register") {
+                    HeadBar(navController = navController)
+                }
+            },
+            // Hide BottomBar on login and register screens
+            bottomBar = {
+                if (currentDestination != "login" && currentDestination != "register") {
+                    BottomNavigationBar(navController = navController)
+                }}
         ) { innerPadding ->
             Surface(
                 modifier = Modifier.padding(innerPadding)
@@ -84,10 +97,17 @@ fun MainScreen() {
 //to do : Faire la transition
 @Composable
 fun NavigationGraph(navController: NavHostController) {
-    NavHost(navController = navController, startDestination = "home") {
+    NavHost(navController = navController, startDestination = "login") {
         composable("home") { AccueilPage() }
         composable("search") { WikiAnimalsPage(navController) }
         composable("profile") { ProfilePage(navController) }
+        composable("login") {
+            LoginScreen(navController = navController) // Passer le navController à LoginScreen
+        }
+        // Naviguer vers l'écran de création de compte
+        composable("register") {
+            RegisterScreen(navController = navController) // Passer le navController à RegisterScreen
+        }
         composable(
             "animalPage/{name}/{age}/{poids}/{imageRes}",
             arguments = listOf(
