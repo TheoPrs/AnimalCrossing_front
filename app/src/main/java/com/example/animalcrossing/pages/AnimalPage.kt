@@ -13,6 +13,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 
@@ -33,7 +34,7 @@ fun AnimalPage(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background)
+            .background(Color(0xFFF4D6CC))
             .padding(16.dp)
     ) {
 
@@ -101,17 +102,17 @@ fun AnimalPage(
 @Composable
 fun AnimalFeedingStatus(animalName: String) {
     val daysOfWeek = listOf("Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim")
-    val feedingStatus = remember { Array(7) { mutableStateOf(true) } }
+    val feedingStatus = remember { Array(7) { mutableStateOf(false) } }
 
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(16.dp)
-            .background(MaterialTheme.colorScheme.surface, shape = MaterialTheme.shapes.medium)
-            .padding(16.dp)
+
+            .background(Color(0xFFF4D6CC), shape = MaterialTheme.shapes.medium)
+
     ) {
         Text(
-            text = "Avez-vous nourri $animalName",
+            text = "Avez-vous nourri $animalName ?",
             style = MaterialTheme.typography.headlineMedium,
             modifier = Modifier.align(Alignment.CenterHorizontally),
             color = MaterialTheme.colorScheme.onSurface
@@ -148,7 +149,7 @@ fun AnimalFeedingStatus(animalName: String) {
 fun FeedingDayButton(isFed: Boolean, onClick: () -> Unit) {
     Box(
         modifier = Modifier
-            .size(60.dp)
+            .size(45.dp)
             .clip(CircleShape)
             .background(
                 color = if (isFed) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.error,
