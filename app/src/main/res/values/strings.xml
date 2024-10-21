@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AnimalCrossing</string>
+    <string name="animal_details">Age: %1$d, poids: %2$d</string>
 </resources>

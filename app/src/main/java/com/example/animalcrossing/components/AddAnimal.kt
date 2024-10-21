@@ -105,7 +105,9 @@ fun AddAnimal(
                 .padding(top = 15.dp)
         ) {
 
-            Button(onClick = { onDismiss() }) {
+            Button(onClick = { onDismiss() },
+                colors = ButtonDefaults.run { buttonColors(Color(0xFFEAC9B8))}
+            ) {
                 Text("Annuler")
             }
             Spacer(modifier = Modifier.width(8.dp))
@@ -115,7 +117,8 @@ fun AddAnimal(
                     val ageInt = age.toIntOrNull() ?: 0
                     val poidsInt = poids.toIntOrNull() ?: 0
                     onAddAnimal(name, ageInt, poidsInt, sexe, espece, imageRes)
-                }
+                },
+                colors = ButtonDefaults.run { buttonColors(Color(0xFFEAC9B8)) }
             ) {
                 Text("Ajouter")
             }

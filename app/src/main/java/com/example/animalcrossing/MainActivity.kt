@@ -19,14 +19,17 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.example.animalcrossing.components.BottomNavigationBar
 import com.example.animalcrossing.components.HeadBar
 import com.example.animalcrossing.data.entities.AnimalWiki
 import com.example.animalcrossing.data.entities.User
 import com.example.animalcrossing.pages.AccueilPage
+import com.example.animalcrossing.pages.AnimalPage
 import com.example.animalcrossing.pages.ProfilePage
 import com.example.animalcrossing.pages.WikiAnimalsDetails
 import com.example.animalcrossing.pages.WikiAnimalsPage
@@ -85,6 +88,21 @@ fun NavigationGraph(navController: NavHostController) {
         composable("home") { AccueilPage() }
         composable("search") { WikiAnimalsPage(navController) }
         composable("profile") { ProfilePage(navController) }
+        composable(
+            "animalPage/{name}/{age}/{poids}/{imageRes}",
+            arguments = listOf(
+                navArgument("name") { type = NavType.StringType },
+                navArgument("age") { type = NavType.IntType },
+                navArgument("poids") { type = NavType.IntType },
+                navArgument("imageRes") { type = NavType.IntType }
+            )
+        ) { backStackEntry ->
+            val name = backStackEntry.arguments?.getString("name") ?: ""
+            val age = backStackEntry.arguments?.getInt("age") ?: 0
+            val poids = backStackEntry.arguments?.getInt("poids") ?: 0
+            val imageRes = backStackEntry.arguments?.getInt("imageRes")
+
+        AnimalPage(navController = navController, name = name, age = age, poids = poids, imageRes = imageRes)
         composable("details/{animalId}") { backStackEntry ->
             val animalIdString = backStackEntry.arguments?.getString("animalId") // Récupère comme String
             val animalId = animalIdString?.toIntOrNull() // Convertit en Int, retourne null si la conversion échoue
@@ -95,6 +113,7 @@ fun NavigationGraph(navController: NavHostController) {
         }
     }
 }
+
 
 @Composable
 fun SearchScreen() {
