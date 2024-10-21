@@ -1,6 +1,7 @@
 package com.example.animalcrossing
 
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
@@ -17,6 +18,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
@@ -42,6 +44,7 @@ import io.github.jan.supabase.postgrest.Postgrest
 import io.github.jan.supabase.postgrest.from
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+
 
 val supabase = createSupabaseClient(
     supabaseUrl = "https://hkrzmotogcwjlwmdrmni.supabase.co",
@@ -81,11 +84,12 @@ fun MainScreen() {
     }
 }
 
-//to do : Faire la transition
+
 @Composable
 fun NavigationGraph(navController: NavHostController) {
+    val context = LocalContext.current
     NavHost(navController = navController, startDestination = "home") {
-        composable("home") { AccueilPage() }
+        composable("home") { AccueilPage(context = context) }
         composable("search") { WikiAnimalsPage(navController) }
         composable("profile") { ProfilePage(navController) }
         composable(
@@ -122,6 +126,7 @@ fun NavigationGraph(navController: NavHostController) {
         }
     }
 }
+
 
 
 @Composable

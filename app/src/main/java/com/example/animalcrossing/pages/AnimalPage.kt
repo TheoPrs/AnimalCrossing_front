@@ -16,8 +16,6 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import android.content.Context
-import androidx.compose.runtime.*
 import androidx.compose.ui.platform.LocalContext
 import kotlinx.coroutines.launch
 import androidx.compose.ui.text.font.FontWeight
@@ -25,6 +23,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.example.animalcrossing.data.datasource.animal.FeedingStatusManager
+
 
 
 @Composable
@@ -35,13 +34,21 @@ fun AnimalPage(
     poids: Int,
     imageRes: Int?
 ) {
+    val context = LocalContext.current
+    val feedingStatusManager = remember { FeedingStatusManager(context) }
+    val scope = rememberCoroutineScope()
+
+    // Utilisation des collecteurs d'état pour lundi et mardi
+    val mondayFeedingStatus by feedingStatusManager.getFedStatus("MONDAY").collectAsState(initial = false)
+    val tuesdayFeedingStatus by feedingStatusManager.getFedStatus("TUESDAY").collectAsState(initial = false)
+
     Column(
         modifier = Modifier
             .fillMaxSize()
             .background(Color(0xFFF4D6CC))
             .padding(16.dp)
     ) {
-
+        // Barre de retour
         Row(verticalAlignment = Alignment.CenterVertically) {
             IconButton(onClick = { navController.popBackStack() }) {
                 Icon(
@@ -55,7 +62,7 @@ fun AnimalPage(
 
         Spacer(modifier = Modifier.height(32.dp))
 
-
+        // Image de l'animal
         if (imageRes != null) {
             Image(
                 painter = painterResource(id = imageRes),
@@ -71,7 +78,7 @@ fun AnimalPage(
 
         Spacer(modifier = Modifier.height(16.dp))
 
-
+        // Informations sur l'animal
         Text(
             text = name,
             style = MaterialTheme.typography.headlineMedium,
@@ -90,33 +97,46 @@ fun AnimalPage(
 
         Spacer(modifier = Modifier.height(32.dp))
 
-        AnimalFeedingStatus(name)
+        // Statut de nourrissage pour les jours de la semaine
+        AnimalFeedingStatus(
+            name = name,
+            mondayFeedingStatus = mondayFeedingStatus,
+            tuesdayFeedingStatus = tuesdayFeedingStatus,
+            onMondayStatusChanged = { fed ->
+                scope.launch {
+                    feedingStatusManager.setFedStatus("MONDAY", fed)
+                }
+            },
+            onTuesdayStatusChanged = { fed ->
+                scope.launch {
+                    feedingStatusManager.setFedStatus("TUESDAY", fed)
+                }
+            }
+        )
 
         Spacer(modifier = Modifier.height(32.dp))
 
-
+        // Bouton de vaccination
         VaccinationButton(
-            onClick = {
-
-            }
+            onClick = {}
         )
     }
 }
 
 @Composable
-fun AnimalFeedingStatus(animalName: String) {
-    val context = LocalContext.current
-    val feedingStatusManager = remember { FeedingStatusManager(context) }
-    val scope = rememberCoroutineScope()
-
-    // Observe the stored feeding status for Monday
-    val mondayFeedingStatus by feedingStatusManager.mondayFeedingStatus.collectAsState(initial = false)
-
+fun AnimalFeedingStatus(
+    name: String,
+    mondayFeedingStatus: Boolean,
+    tuesdayFeedingStatus: Boolean,
+    onMondayStatusChanged: (Boolean) -> Unit,
+    onTuesdayStatusChanged: (Boolean) -> Unit
+) {
     val daysOfWeek = listOf("Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim")
     val feedingStatus = remember { Array(7) { mutableStateOf(false) } }
 
-    // Initialize the Monday status with the stored value
+    // Synchroniser les statuts de nourrissage avec lundi et mardi
     feedingStatus[0].value = mondayFeedingStatus
+    feedingStatus[1].value = tuesdayFeedingStatus
 
     Column(
         modifier = Modifier
@@ -124,7 +144,7 @@ fun AnimalFeedingStatus(animalName: String) {
             .background(Color(0xFFF4D6CC), shape = MaterialTheme.shapes.medium)
     ) {
         Text(
-            text = "Avez-vous nourri $animalName ?",
+            text = "Avez-vous nourri $name ?",
             style = MaterialTheme.typography.headlineMedium,
             modifier = Modifier.align(Alignment.CenterHorizontally),
             color = MaterialTheme.colorScheme.onSurface
@@ -142,10 +162,11 @@ fun AnimalFeedingStatus(animalName: String) {
                         isFed = feedingStatus[i].value,
                         onClick = {
                             feedingStatus[i].value = !feedingStatus[i].value
-                            if (i == 0) {
-                                scope.launch {
-                                    feedingStatusManager.saveMondayFeedingStatus(feedingStatus[0].value)
-                                }
+
+                            // Appeler les fonctions de mise à jour de l'état pour lundi et mardi
+                            when (i) {
+                                0 -> onMondayStatusChanged(feedingStatus[0].value)
+                                1 -> onTuesdayStatusChanged(feedingStatus[1].value)
                             }
                         }
                     )
@@ -160,6 +181,7 @@ fun AnimalFeedingStatus(animalName: String) {
         }
     }
 }
+
 
 @Composable
 fun FeedingDayButton(isFed: Boolean, onClick: () -> Unit) {
