@@ -54,12 +54,6 @@ fun AccueilPage(viewModel: AnimalFactViewModel = viewModel()) {
         verticalArrangement = Arrangement.Top
     ) {
 
-//        // Barre de recherche
-//        SearchBar(
-//            hint = "Search for an animal"
-//        )
-
-
         animalFact?.let { fact ->
             Text(
                 text = fact,

@@ -5,6 +5,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -29,7 +30,9 @@ fun AnimalCard(animal: AnimalCard, onClick: () -> Unit) {
             .padding(8.dp)
             .fillMaxWidth()
             .clickable { onClick() },
-        shape = RoundedCornerShape(16.dp)
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(containerColor = Color(0xFFEAC9B8))
+
     ) {
         Row(
             modifier = Modifier.padding(8.dp)
@@ -53,7 +56,7 @@ fun AnimalCard(animal: AnimalCard, onClick: () -> Unit) {
                 Text(
                     text = if (animal.hasEatenToday) "A mangé aujourd'hui" else "N'a pas mangé",
                     fontSize = 14.sp,
-                    color = if (animal.hasEatenToday) Color.Green else Color.Red,
+                    //color = if (animal.hasEatenToday) Color.Green else Color.Red,
                     textAlign = TextAlign.Left
                 )
             }
