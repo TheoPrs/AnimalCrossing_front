@@ -55,9 +55,9 @@ fun AccueilPage(viewModel: AnimalFactViewModel = viewModel()) {
     ) {
 
         // Barre de recherche
-        SearchBar(
-            hint = "Search for an animal"
-        )
+        //SearchBar(
+        //    hint = "Search for an animal"
+        //)
 
 
         animalFact?.let { fact ->
