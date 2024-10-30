@@ -23,7 +23,7 @@ class AnimalWikiDetailsViewModel(private val animalId: Int): ViewModel() {
     private fun fetchAnimals(animalId: Int) {
         viewModelScope.launch {
             val results = withContext(Dispatchers.IO) {
-                supabase.from("animal_wiki").select {
+                supabase.from("animal").select {
                     filter {
                         filter(column = "id_animal", operator = FilterOperator.EQ, value = animalId)
                     }
