@@ -57,7 +57,7 @@ fun AccueilPage(
             Text(
                 text = "Loading...",
                 color = Color.White,
-                modifier = Modifier.padding(top = 40.dp)
+                modifier = Modifier.padding(top = 200.dp)
             )
         }
 
