@@ -23,14 +23,13 @@ class AnimalWikiDetailsViewModel(private val animalId: Int): ViewModel() {
     private fun fetchAnimals(animalId: Int) {
         viewModelScope.launch {
             val results = withContext(Dispatchers.IO) {
-                supabase.from("animal").select {
+                supabase.from("animal_wiki").select {
                     filter {
                         filter(column = "id_animal", operator = FilterOperator.EQ, value = animalId)
                     }
                 }
             }
-            Log.i("test", "valeur récupéré : ${results}")
-            _animals.value = results.decodeSingle()
+            _animals.value = results.decodeSingleOrNull()
         }
     }
 }
